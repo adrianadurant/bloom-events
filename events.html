@@ -1,0 +1,485 @@
+<!-- Esta página está compuesta por los siguientes bloques: 
+ SVG: No visibles, solo definición
+ Header: Con elementos de nagecación y logo
+ Cursor: Puntero de la página web
+Slider-news: Contiene la primera pantalla de carga y el contenindo de la página, incluido el footer.
+ Main: Contenido de los eventos
+ Footer
+ -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Descubre los mejores festivales de música electrónica y mantente al tanto de los eventos imperdibles. Vive experiencias únicas con actuaciones electrizantes y una atmósfera inigualable. ¡No te lo pierdas!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Events - Events</title>
+    <link rel="icon" type="image/svg" href="/Assets/index/bloom-events-logo2.svg">
+    <link rel="stylesheet" href="../css/events.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/events.js" defer></script>
+    <script src="../js/index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <svg class="Bloom-svg">
+        <symbol id="Burger-icon" viewBox="0 0 24 24">
+            <g stroke-width="0"></g>
+            <g stroke-linecap="round" stroke-linejoin="round"></g>
+            <g> 
+                <path d="M20 7L4 7" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path> 
+                <path d="M20 12L4 12" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path> 
+                <path d="M20 17L4 17" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path> 
+            </g>
+        </symbol>
+        <symbol id="Close-icon" viewBox="0 0 24 24">
+            <g>
+                <path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z" fill="#ffffff"></path>
+            </g>
+        </symbol>
+        <symbol id="User-icon" viewBox="0 0 24 24">
+          <circle cx="12" cy="6" r="4" stroke="#ffffff" stroke-width="1.5" fill="none"></circle>
+          <path d="M20 17.5C20 19.9853 20 22 12 22C4 22 4 19.9853 4 17.5C4 15.0147 7.58172 13 12 13C16.4183 13 20 15.0147 20 17.5Z" stroke="#ffffff" stroke-width="1.5" fill="none"></path>
+        </symbol>
+        <symbol id="Social-icon" viewBox="0 0 24 24">
+            <path d="M12 9C10.3431 9 9 7.65685 9 6C9 4.34315 10.3431 3 12 3C13.6569 3 15 4.34315 15 6C15 7.65685 13.6569 9 12 9Z" stroke="#ffffff" stroke-width="1.5" fill="none"></path>
+            <path d="M5.5 21C3.84315 21 2.5 19.6569 2.5 18C2.5 16.3431 3.84315 15 5.5 15C7.15685 15 8.5 16.3431 8.5 18C8.5 19.6569 7.15685 21 5.5 21Z" stroke="#ffffff" stroke-width="1.5" fill="none"></path>
+            <path d="M18.5 21C16.8431 21 15.5 19.6569 15.5 18C15.5 16.3431 16.8431 15 18.5 15C20.1569 15 21.5 16.3431 21.5 18C21.5 19.6569 20.1569 21 18.5 21Z" stroke="#ffffff" stroke-width="1.5" fill="none"></path>
+            <path d="M20 13C20 10.6106 18.9525 8.46589 17.2916 7M4 13C4 10.6106 5.04752 8.46589 6.70838 7M10 20.748C10.6392 20.9125 11.3094 21 12 21C12.6906 21 13.3608 20.9125 14 20.748" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path>
+          </symbol>
+          <symbol id="Favorite-icon" viewBox="0 0 24 24">
+            <g stroke-width="0"></g>
+            <g stroke-linecap="round" stroke-linejoin="round"></g>
+            <g>
+              <path d="M8.96173 18.9109L9.42605 18.3219L8.96173 18.9109ZM12 5.50063L11.4596 6.02073C11.601 6.16763 11.7961 6.25063 12 6.25063C12.2039 6.25063 12.399 6.16763 12.5404 6.02073L12 5.50063ZM15.0383 18.9109L15.5026 19.4999L15.0383 18.9109ZM9.42605 18.3219C7.91039 17.1271 6.25307 15.9603 4.93829 14.4798C3.64922 13.0282 2.75 11.3345 2.75 9.1371H1.25C1.25 11.8026 2.3605 13.8361 3.81672 15.4758C5.24723 17.0866 7.07077 18.3752 8.49742 19.4999L9.42605 18.3219ZM2.75 9.1371C2.75 6.98623 3.96537 5.18252 5.62436 4.42419C7.23607 3.68748 9.40166 3.88258 11.4596 6.02073L12.5404 4.98053C10.0985 2.44352 7.26409 2.02539 5.00076 3.05996C2.78471 4.07292 1.25 6.42503 1.25 9.1371H2.75ZM8.49742 19.4999C9.00965 19.9037 9.55954 20.3343 10.1168 20.6599C10.6739 20.9854 11.3096 21.25 12 21.25V19.75C11.6904 19.75 11.3261 19.6293 10.8736 19.3648C10.4213 19.1005 9.95208 18.7366 9.42605 18.3219L8.49742 19.4999ZM15.5026 19.4999C16.9292 18.3752 18.7528 17.0866 20.1833 15.4758C21.6395 13.8361 22.75 11.8026 22.75 9.1371H21.25C21.25 11.3345 20.3508 13.0282 19.0617 14.4798C17.7469 15.9603 16.0896 17.1271 14.574 18.3219L15.5026 19.4999ZM22.75 9.1371C22.75 6.42503 21.2153 4.07292 18.9992 3.05996C16.7359 2.02539 13.9015 2.44352 11.4596 4.98053L12.5404 6.02073C14.5983 3.88258 16.7639 3.68748 18.3756 4.42419C20.0346 5.18252 21.25 6.98623 21.25 9.1371H22.75ZM14.574 18.3219C14.0479 18.7366 13.5787 19.1005 13.1264 19.3648C12.6739 19.6293 12.3096 19.75 12 19.75V21.25C12.6904 21.25 13.3261 20.9854 13.8832 20.6599C14.4405 20.3343 14.9903 19.9037 15.5026 19.4999L14.574 18.3219Z" fill="#000000"></path>
+            </g>
+          </symbol>
+          <symbol id="Next-arrow" viewBox="0 0 42 42">
+            <circle opacity="0.75" cx="20.914" cy="20.9141" r="20.9141" transform="rotate(90 20.914 20.9141)" fill="none"></circle>
+            <line x1="17.2772" y1="11.4846" x2="26.3974" y2="20.6049" stroke="#000"></line>
+            <line x1="16.5701" y1="29.725" x2="25.6903" y2="20.6047" stroke="#000"></line>
+        </symbol>
+        <symbol id="Prev-arrow" viewBox="0 0 42 42">
+            <circle opacity="0.75" cx="20.9141" cy="20.9141" r="20.9141" transform="rotate(-90 20.9141 20.9141)" fill="none"></circle>
+            <line x1="24.5509" y1="30.3435" x2="15.4307" y2="21.2233" stroke="#000"></line>
+            <line x1="25.258" y1="12.1031" x2="16.1378" y2="21.2234" stroke="#000"></line>
+        </symbol>
+        <symbol id="Caret-icon" viewBox="0 0 24 24" fill="none">
+            <g transform="rotate(180, 12, 12)">
+              <path d="M15 7L10 12L15 17" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </symbol>
+        <symbol id="Down-icon" viewBox="0 0 24 24" fill="none">
+            <g transform="rotate(270, 12, 12)">
+                <path d="M15 7L10 12L15 17" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </symbol>
+        <symbol id="Pin-icon" fill="#ffffff" viewBox="0 0 32 32">
+            <path d="M16.114-0.011c-6.559 0-12.114 5.587-12.114 12.204 0 6.93 6.439 14.017 10.77 18.998 0.017 0.020 0.717 0.797 1.579 0.797h0.076c0.863 0 1.558-0.777 1.575-0.797 4.064-4.672 10-12.377 10-18.998 0-6.618-4.333-12.204-11.886-12.204zM16.515 29.849c-0.035 0.035-0.086 0.074-0.131 0.107-0.046-0.032-0.096-0.072-0.133-0.107l-0.523-0.602c-4.106-4.71-9.729-11.161-9.729-17.055 0-5.532 4.632-10.205 10.114-10.205 6.829 0 9.886 5.125 9.886 10.205 0 4.474-3.192 10.416-9.485 17.657zM16.035 6.044c-3.313 0-6 2.686-6 6s2.687 6 6 6 6-2.687 6-6-2.686-6-6-6zM16.035 16.044c-2.206 0-4.046-1.838-4.046-4.044s1.794-4 4-4c2.207 0 4 1.794 4 4 0.001 2.206-1.747 4.044-3.954 4.044z"></path>
+        </symbol>
+        <symbol id="Calendar-icon" fill="#ffffff" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid">
+            <path d="M30.000,32.000 L2.000,32.000 C0.897,32.000 -0.000,31.103 -0.000,30.000 L-0.000,5.000 C-0.000,3.897 0.897,3.000 2.000,3.000 L10.000,3.000 L10.000,1.000 C10.000,0.448 10.448,-0.000 11.000,-0.000 C11.552,-0.000 12.000,0.448 12.000,1.000 L12.000,3.000 L20.000,3.000 L20.000,1.000 C20.000,0.448 20.448,-0.000 21.000,-0.000 C21.552,-0.000 22.000,0.448 22.000,1.000 L22.000,3.000 L30.000,3.000 C31.103,3.000 32.000,3.897 32.000,5.000 L32.000,30.000 C32.000,31.103 31.103,32.000 30.000,32.000 ZM22.000,5.000 L22.000,6.000 C22.000,6.552 21.552,7.000 21.000,7.000 C20.448,7.000 20.000,6.552 20.000,6.000 L20.000,5.000 L12.000,5.000 L12.000,6.000 C12.000,6.552 11.552,7.000 11.000,7.000 C10.448,7.000 10.000,6.552 10.000,6.000 L10.000,5.000 L2.000,5.000 L2.000,30.000 L29.997,30.000 L30.000,5.000 L22.000,5.000 ZM25.000,24.000 L23.000,24.000 C22.448,24.000 22.000,23.552 22.000,23.000 L22.000,21.000 C22.000,20.448 22.448,20.000 23.000,20.000 L25.000,20.000 C25.552,20.000 26.000,20.448 26.000,21.000 L26.000,23.000 C26.000,23.552 25.552,24.000 25.000,24.000 ZM25.000,16.000 L23.000,16.000 C22.448,16.000 22.000,15.552 22.000,15.000 L22.000,13.000 C22.000,12.448 22.448,12.000 23.000,12.000 L25.000,12.000 C25.552,12.000 26.000,12.448 26.000,13.000 L26.000,15.000 C26.000,15.552 25.552,16.000 25.000,16.000 ZM17.000,24.000 L15.000,24.000 C14.448,24.000 14.000,23.552 14.000,23.000 L14.000,21.000 C14.000,20.448 14.448,20.000 15.000,20.000 L17.000,20.000 C17.552,20.000 18.000,20.448 18.000,21.000 L18.000,23.000 C18.000,23.552 17.552,24.000 17.000,24.000 ZM17.000,16.000 L15.000,16.000 C14.448,16.000 14.000,15.552 14.000,15.000 L14.000,13.000 C14.000,12.448 14.448,12.000 15.000,12.000 L17.000,12.000 C17.552,12.000 18.000,12.448 18.000,13.000 L18.000,15.000 C18.000,15.552 17.552,16.000 17.000,16.000 ZM9.000,24.000 L7.000,24.000 C6.448,24.000 6.000,23.552 6.000,23.000 L6.000,21.000 C6.000,20.448 6.448,20.000 7.000,20.000 L9.000,20.000 C9.552,20.000 10.000,20.448 10.000,21.000 L10.000,23.000 C10.000,23.552 9.552,24.000 9.000,24.000 ZM9.000,16.000 L7.000,16.000 C6.448,16.000 6.000,15.552 6.000,15.000 L6.000,13.000 C6.000,12.448 6.448,12.000 7.000,12.000 L9.000,12.000 C9.552,12.000 10.000,12.448 10.000,13.000 L10.000,15.000 C10.000,15.552 9.552,16.000 9.000,16.000 Z"></path>
+        </symbol>
+      </svg>
+    <header class="Header">
+        <h1 class="Header-h1">
+            <a href="../index.html" class="Header-a Header-a--logo" title="Bloom Events - Home">
+                <img class="Header-img" src="../Assets/index/bloom-events-logo.svg" alt="Bloom Events Logo">
+            </a>     
+        </h1>
+         <div class="Header-buttons">
+            <button class="Header-button Header-button--burger" title="Burger button">
+                <svg>
+                    <use href="#Burger-icon"/>
+                </svg>
+            </button>
+            <button class="Header-button Header-button--close" title="Close button">
+                <svg>
+                    <use href="#Close-icon" />
+                </svg>
+            </button>
+         </div>
+        <nav class="Header-nav">
+            <ul class="Header-ul">
+                <li class="Header-li"><a href="../events.html" class="Header-a" title="Bloom Eventos" >Eventos</a></li>
+                <li class="Header-li"><a href="../music.html" class="Header-a" title="Bloom Música" >Música</a></li>
+                <li class="Header-li"><a href="../news.html" class="Header-a" title="Bloom Noticiass" >Noticias</a></li>
+            </ul>
+        </nav>
+        <div class="Burger-logo">
+            <a href="../index.html" class="Header-a Header-a--logo" title="Logo" >
+                <img class="Header-img Header-img--mobile" src="../Assets/index/bloom-events-logo.svg" alt="Bloom Events Logo">
+            </a> 
+        </div>
+        <div class="Header-div">
+            <ul class="Header-ul Header-ul--social">
+                <li class="Header-li Header-li--social"><a href="#" class="Header-a Header-a--social" title="Mi perfil">
+                    <svg class="Header-svg">
+                        <use href="#User-icon"/>
+                    </svg>
+                </a></li>
+                <li class="Header-li Header-li--social"><a href="#" class="Header-a Header-a--social" title="Social">
+                    <svg class="Header-svg">
+                        <use href="#Social-icon"/>
+                    </svg>
+                </a></li>
+            </ul>
+        </div>
+</header>
+<div class="Cursor"></div>
+<main class="Main">
+    <div class="Main-swiper">
+            <picture class="Main-picture Main-picture--aquasella">
+                <img src="../Assets/events/aquasella.webp" alt="Aquasella" class="Main-img">
+            </picture>
+            <picture class="Main-picture Main-picture--elrow ">
+                <img src="../Assets/events/elrow.webp" alt="elrow" class="Main-img">
+            </picture>
+            <picture class="Main-picture Main-picture--monegros">
+                <img src="../Assets/events/monegros.webp" alt="Monegros" class="Main-img">
+            </picture>
+            <picture class="Main-picture Main-picture--dreambeach ">
+                <img src="../Assets/events/dreambeach.webp" alt="Dreambeach" class="Main-img">
+            </picture>
+            <picture class="Main-picture Main-picture--medusa">
+                <img src="../Assets/events/medusa.webp" alt="Medusa" class="Main-img">
+            </picture>
+
+            <article class="Evento Evento--aquasella Evento--static">
+                <div class="Evento-title">
+                    <h2 class="Evento-heading">Aquasella</h2>
+                    <button class="Evento-button Evento-button--aquasella" title="Aquasella">
+                        <svg>
+                            <use href="#Close-icon" />
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="Evento-info">
+                    <div class="Evento-paragraphs">
+                        <div class="Evento-p">¡Prepárate para el Aquasella 2025, uno de los festivales de música electrónica más icónicos de España! Este año promete ser una auténtica locura en el mágico entorno de Arriondas, Asturias, rodeado de montañas y naturaleza.</div>
+                        <div class="Evento-p">Desde sus inicios, el Aquasella ha sido un templo para los amantes del techno, house y beats electrónicos, y en 2025 no será la excepción. Con un line-up lleno de leyendas del género, nuevas promesas y sets que te harán vibrar hasta el amanecer, este es EL lugar para perderte en la música.</div>
+                        <div class="Evento-p">¿Lo mejor? Además de la música, disfrutarás del ambiente único que solo Aquasella sabe crear: buena vibra, food trucks para recargar energías, zonas de camping para que vivas la experiencia al 100% y, por supuesto, afters épicos.</div>
+                        <div class="Evento-p">Si te encanta bailar bajo las estrellas, descubrir artistas brutales y conectar con gente que comparte tu pasión por la electrónica, Aquasella 2025 es el plan perfecto. ¡No te lo pierdas!</div>
+                    </div>
+                    <div class="Evento-details">
+                        <span class="Evento-span">Artistas</span>
+                        <ul class="Evento-ul Evento-ul--Artists">
+                            <li class="Evento-li">
+                                <picture class="Evento-picture">
+                                    <img src="../Assets/events/BenSims_600b.webp" alt="Ben Sims" class="Evento-img" loading="lazy">
+                                </picture>
+                                <span class="Evento-artist">Ben Sims</span>
+                            </li>
+                            <li class="Evento-li">
+                                <picture class="Evento-picture">
+                                    <img src="../Assets/events/hector-oaks.webp" alt="Hector Oaks" class="Evento-img" loading="lazy">
+                                </picture>
+                                <span class="Evento-artist">Hector Oaks</span>
+                            </li>
+                            <li class="Evento-li">
+                                <picture class="Evento-picture">
+                                    <img src="../Assets/events/theladymachine.webp" alt="The Lady Machine" class="Evento-img" loading="lazy">
+                                </picture>
+                                <span class="Evento-artist">The Lady Machine</span>
+                            </li>
+                        </ul>
+                            <span class="Evento-span Evento-span--info">Info</span>
+                            <ul class="Evento-ul">
+                                <li class="Evento-li">
+                                    <svg>
+                                        <use href="#Calendar-icon"/>
+                                    </svg>
+                                <span class="Evento-artist">Del 14 al 17 de Agosto</span></li>
+                                <li class="Evento-li">
+                                    <svg>
+                                        <use href="#Pin-icon"/>
+                                    </svg>
+                                <span class="Evento-artist">El Merediz, Arriondas (AS)</span></li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="Evento-tickets"><a href="https://aquasella.com/compra-tu-abono/" title="Entradas - Aquasella 2025" class="Evento-a" target="_blank" rel="noreferrer">Comprar entradas</a></div>
+            </article>
+            <article class="Evento Evento--elrow">
+                <div class="Evento-title">
+                    <h3 class="Evento-heading">elRow</h3>
+                    <button class="Evento-button Evento-button--elrow">
+                        <svg>
+                            <use href="#Close-icon"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="Evento-info">
+                    <div class="Evento-paragraphs">
+                        <div class="Evento-p">Prepárate para una experiencia sensorial explosiva: ¡elrow aterriza en Barcelona el 15 de junio! Sumérgete en un universo de fantasía desbordante, donde la música electrónica de primer nivel se fusiona con un espectáculo visual deslumbrante y una puesta en escena teatralmente extravagante. Olvida todo lo que sabes sobre las fiestas; elrow no es solo una fiesta, es una experiencia inmersiva que te transportará a un mundo de color, surrealismo y diversión sin límites. Prepárate para bailar, reír y maravillarte con un despliegue de creatividad sin parangón.</div>
+                        <div class="Evento-p">Este año, elrow promete superar todas las expectativas con una temática innovadora y un cartel de DJs internacionales de renombre, garantizando una noche inolvidable llena de energía positiva y momentos mágicos que perdurarán en tu memoria. La producción de elrow es legendaria, con elaborados escenarios, disfraces impactantes y una atención al detalle que te dejará sin aliento. Cada rincón estará cuidadosamente diseñado para sumergirte completamente en la atmósfera única e irrepetible de elrow.</div>
+                        <div class="Evento-p">Prepárate para una noche de pura locura, donde la música, el arte y la diversión se unen para crear una experiencia que jamás olvidarás. ¡Elrow Barcelona el 15 de junio: Consigue tus entradas cuanto antes, pues este evento se agota rápidamente.</div>
+                    </div>
+                    <div class="Evento-details">
+                        <span class="Evento-span">Artistas</span>
+                        <ul class="Evento-ul Evento-ul--Artists">
+                            <li class="Evento-li">
+                                <picture class="Evento-picture">
+                                    <img src="https://i1.sndcdn.com/avatars-IYapMSZbxov7yvBY-9mmObA-t1080x1080.jpg" alt="Andrés Campo" class="Evento-img" loading="lazy">
+                                </picture>
+                                <span class="Evento-artist">Andrés Campo</span>
+                            </li>
+                            <li class="Evento-li">
+                                <picture class="Evento-picture">
+                                    <img src="https://whenwedip.com/wp-content/uploads/2022/02/Lilly-Palmer.jpg" alt="Lilly Palmer" class="Evento-img" loading="lazy">
+                                </picture>
+                                <span class="Evento-artist">Lilly Palmer</span>
+                            </li>
+                            <li class="Evento-li">
+                                <picture class="Evento-picture">
+                                    <img src="https://images.sk-static.com/images/media/profile_images/artists/525648/huge_avatar" alt="Paul Kalkbrenner" class="Evento-img" loading="lazy">
+                                </picture>
+                                <span class="Evento-artist">Paul Kalkbrenner</span>
+                            </li>
+                        </ul>
+                            <span class="Evento-span Evento-span--info">Info</span>
+                            <ul class="Evento-ul">
+                                <li class="Evento-li">
+                                    <svg>
+                                        <use href="#Calendar-icon"/>
+                                        </svg>
+                                <span class="Evento-artist">15 de Junio</span></li>
+                                <li class="Evento-li">
+                                    <svg>
+                                    <use href="#Pin-icon"/>
+                                    </svg>
+                                <span class="Evento-artist">Barcelona, Cataluña</span></li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="Evento-tickets"><a href="https://www.enterticket.es/eventos/elrow-offsonar-423466" title="Entradas - Elrow Barcelona" class="Evento-a" target="_blank" rel="noreferrer">Comprar entradas</a></div>
+            </article>
+            <article class="Evento Evento--monegros">
+                <div class="Evento-title">
+                    <h4 class="Evento-heading">Monegros</h4>
+                    <button class="Evento-button Evento-button--monegros" title="Monegros">
+                        <svg>
+                            <use href="#Close-icon"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="Evento-info">
+                    <div class="Evento-paragraphs">
+                        <div class="Evento-p">Prepárate para una experiencia única e inolvidable: ¡el Festival Monegros regresa el 26 de julio de 2025 al desierto de Monegros, Huesca! Bajo el inmenso cielo del desierto, te espera una jornada épica de música electrónica, arte y naturaleza. Sumérgete en una atmósfera electrizante donde los ritmos vibrantes se mezclan con la energía inagotable de miles de asistentes unidos por la pasión por la música.</div>
+                        <div class="Evento-p">El Festival Monegros es más que un evento musical; es una experiencia cultural a gran escala. Es un encuentro con la naturaleza en estado puro, donde el paisaje desértico se convierte en un lienzo espectacular para un evento que siempre ha destacado por su originalidad y su apuesta por la innovación. La organización ha preparado una impresionante programación con artistas de renombre internacional, que harán bailar al público durante horas.</div>
+                        <div class="Evento-p">No esperes una fiesta convencional; el Festival Monegros es una experiencia que redefinirá tu concepto de festival. Un encuentro con la música, el arte y la naturaleza, con un ambiente festivo y seguro. Asegura tu entrada con antelación, pues la demanda es alta y las plazas se agotan rápidamente. ¡El 26 de julio de 2025, vive la magia del Festival Monegros en el desierto!</div>
+                    </div>
+                    <div class="Evento-details">
+                        <span class="Evento-span">Artistas</span>
+                        <ul class="Evento-ul Evento-ul--Artists">
+                            <li class="Evento-li">
+                                <picture class="Evento-picture">
+                                    <img src="https://i.scdn.co/image/ab6761610000e5eb71b9ccd0f00f003b3d2b5eb0" alt="Sara Landry" class="Evento-img" loading="lazy">
+                                </picture>
+                                <span class="Evento-artist">Sara Landry</span>
+                            </li>
+                            <li class="Evento-li">
+                                <picture class="Evento-picture">
+                                    <img src="https://static.ra.co/images/profiles/square/chasestatus.jpg?dateUpdated=1638348528000" alt="Chase & Status" class="Evento-img" loading="lazy">
+                                </picture>
+                                <span class="Evento-artist">Chase & Status</span>
+                            </li>
+                            <li class="Evento-li">
+                                <picture class="Evento-picture">
+                                    <img src="https://cdn-images.dzcdn.net/images/artist/5e970ce2f5c52fe2b036f088eb4a7bef/1900x1900-000000-80-0-0.jpg" alt="Vitalic" class="Evento-img" loading="lazy">
+                                </picture>
+                                <span class="Evento-artist">Vitalic</span>
+                            </li>
+                        </ul>
+                            <span class="Evento-span Evento-span--info">Info</span>
+                            <ul class="Evento-ul">
+                                <li class="Evento-li">
+                                    <svg>
+                                        <use href="#Calendar-icon"/>
+                                        </svg>
+                                <span class="Evento-artist">26 de Julio</span></li>
+                                <li class="Evento-li">
+                                    <svg>
+                                    <use href="#Pin-icon"/>
+                                    </svg>
+                                <span class="Evento-artist">Desierto de Monegros</span></li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="Evento-tickets"><a href="https://monegrosfestival.com/es/tickets" title="Entradas - Monegros 2025" class="Evento-a" target="_blank" rel="noreferrer">Comprar entradas</a></div>
+            </article>
+            <article class="Evento Evento--dreambeach">
+                <div class="Evento-title">
+                    <h5 class="Evento-heading">Dreambeach</h5>
+                    <button class="Evento-button Evento-button--dreambeach" title="Dreambeach">
+                        <svg>
+                            <use href="#Close-icon"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="Evento-info">
+                    <div class="Evento-paragraphs">
+                        <div class="Evento-p">El Dreambeach Festival regresa a Almería para su 11ª edición, que se celebrará del 7 al 10 de agosto de 2025 en El Toyo-Retamar. Este año, el festival promete ser más internacional que nunca, con un cartel que incluye géneros como EDM, Hardstyle, Techno, Breakbeat y Drum & Bass.</div>
+                        <div class="Evento-p">Entre los artistas confirmados hasta ahora se encuentran Will Smith, quien ofrecerá una actuación exclusiva en España para Dreambeach, Nathy Peluso con su show "Club Grasa", y el dúo Deekline & Wizard, que regresa tras ocho años de ausencia.</div>
+                        <div class="Evento-p">Además, el festival contará con cuatro escenarios independientes y una zona de acampada oficial junto al recinto de conciertos. La edición anterior, en 2024, superó todas las expectativas con más de 120.000 asistentes.</div>
+                    </div>
+                    <div class="Evento-details">
+                        <span class="Evento-span">Artistas</span>
+                        <ul class="Evento-ul Evento-ul--Artists">
+                            <li class="Evento-li">
+                                <picture class="Evento-picture">
+                                    <img src="https://imgproxy.ra.co/_/quality:66/aHR0cHM6Ly9zdGF0aWMucmEuY28vaW1hZ2VzL3Byb2ZpbGVzL3NxdWFyZS9iZW5rbG9jay5qcGc_ZGF0ZVVwZGF0ZWQ9MTYxNDY3NDMwMjAwMA==" alt="Ben Klock" class="Evento-img" loading="lazy">
+                                </picture>
+                                <span class="Evento-artist">Ben Klock</span>
+                            </li>
+                            <li class="Evento-li">
+                                <picture class="Evento-picture">
+                                    <img src="https://images.sk-static.com/images/media/profile_images/artists/3803451/huge_avatar" alt="Nicky Romero" class="Evento-img" loading="lazy">
+                                </picture>
+                                <span class="Evento-artist">Chase & Status</span>
+                            </li>
+                            <li class="Evento-li">
+                                <picture class="Evento-picture">
+                                    <img src="https://i.scdn.co/image/ab6761610000e5eb2bd2406364f86733efafcf80" alt="Steve Angello" class="Evento-img" loading="lazy">
+                                </picture>
+                                <span class="Evento-artist">Steve Angello</span>
+                            </li>
+                        </ul>
+                            <span class="Evento-span Evento-span--info">Info</span>
+                            <ul class="Evento-ul">
+                                <li class="Evento-li">
+                                    <svg>
+                                        <use href="#Calendar-icon"/>
+                                        </svg>
+                                <span class="Evento-artist">Del 07 al 10 de Agosto</span></li>
+                                <li class="Evento-li">
+                                    <svg>
+                                    <use href="#Pin-icon"/>
+                                    </svg>
+                                <span class="Evento-artist">Retamar, El Toyo</span></li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="Evento-tickets"><a href="https://www.dreambeach.es/tickets/" title="Entradas - Dreambeach Festival" class="Evento-a" target="_blank" rel="noreferrer">Comprar entradas</a></div>
+            </article>
+            <article class="Evento Evento--medusa">
+                <div class="Evento-title">
+                    <h6 class="Evento-heading">Medusa</h6>
+                    <button class="Evento-button Evento-button--medusa" title="Medusa">
+                        <svg>
+                            <use href="#Close-icon"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="Evento-info">
+                    <div class="Evento-paragraphs">
+                        <div class="Evento-p">¡Prepárate para vivir una experiencia inolvidable en el Medusa Festival 2025! Del 7 al 11 de agosto, la Playa de Cullera en Valencia se transformará en el epicentro de la música electrónica, celebrando su 10º aniversario por todo lo alto.</div>
+                        <div class="Evento-p">Este año, el festival nos sumerge en el enigmático mundo de 'El secreto de Wonderland', una temática que promete escenarios alucinantes y una atmósfera mágica que te dejará sin palabras.</div>
+                        <div class="Evento-p">Además de la música, el Medusa ofrece una experiencia completa con zonas de acampada, áreas VIP y una variedad de opciones gastronómicas para que no te falte de nada.</div>
+                        <div class="Evento-p">No pierdas la oportunidad de ser parte de esta celebración épica. Las entradas ya están a la venta, así que reúne a tu grupo, prepara tus mejores outfits festivaleros y únete a la fiesta en la playa que marcará el verano de 2025. ¡Nos vemos en el Medusa!</div>
+                    </div>
+                    <div class="Evento-details">
+                        <span class="Evento-span">Artistas</span>
+                        <ul class="Evento-ul Evento-ul--Artists">
+                            <li class="Evento-li">
+                                <picture class="Evento-picture">
+                                    <img src="https://i.scdn.co/image/ab6761610000e5eb90db664ba1bf6574239f859d" alt="Armin van Buuren" class="Evento-img" loading="lazy">
+                                </picture>
+                                <span class="Evento-artist">Armin van Buuren</span>
+                            </li>
+                            <li class="Evento-li">
+                                <picture class="Evento-picture">
+                                    <img src="https://static.ra.co/images/profiles/denniscruz.jpg?dateUpdated=1526256000000" alt="Dennis Cruz" class="Evento-img" loading="lazy">
+                                </picture>
+                                <span class="Evento-artist">Dennis Cruz</span>
+                            </li>
+                            <li class="Evento-li">
+                                <picture class="Evento-picture">
+                                    <img src="https://imgproxy.ra.co/_/quality:66/aHR0cHM6Ly9zdGF0aWMucmEuY28vaW1hZ2VzL3Byb2ZpbGVzL3NxdWFyZS9rbGFuZ2t1ZW5zdGxlci5qcGc_ZGF0ZVVwZGF0ZWQ9MTU3ODg3MzYwMDAwMA==" alt="Klangkuenstler" class="Evento-img" loading="lazy">
+                                </picture>
+                                <span class="Evento-artist">Klangkuenstler</span>
+                            </li>
+                        </ul>
+                            <span class="Evento-span Evento-span--info">Info</span>
+                            <ul class="Evento-ul">
+                                <li class="Evento-li">
+                                    <svg>
+                                        <use href="#Calendar-icon"/>
+                                        </svg>
+                                <span class="Evento-artist">Del 07 al 11 de Agosto</span></li>
+                                <li class="Evento-li">
+                                    <svg>
+                                    <use href="#Pin-icon"/>
+                                    </svg>
+                                <span class="Evento-artist">Playa de Cullera, Valencia</span></li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="Evento-tickets"><a href="https://www.medusasunbeach.com/entradas" class="Evento-a" title="Entradas - Medusa Sunbeach Festival" target="_blank" rel="noreferrer">Comprar entradas</a></div>
+            </article>
+    </div>
+</main>
+<footer class="Footer">
+    <div class="Footer-wrapper">
+        <div class="Footer-logo">
+            <a href="../index.html" class="Footer-a" title="Bloom Events - Home" >
+                <img src="../Assets/index/bloom-events-logo2.svg" alt="BE Logo" class="Footer-img" loading="lazy">
+            </a>
+        </div>
+        <div class="Footer-newsletter">
+            <div class="Footer-h6">
+              <p class="Footer-p">Entérate de todas las novedades</p>
+            </div>
+            <form class="Footer-form" action="/submit" method="POST">
+              <label class="Footer-label" for="email"></label>
+              <input class="Footer-input" type="email" id="email" name="email" placeholder="Introduce tu correo electrónico" required>
+              <!-- He deshabilitado la acciñon del botón submit para que no de error -->
+              <button class="Footer-submit" type="submit" title="Submit" disabled>
+                  <svg width="30px" height="30px">
+                      <use href="#Caret-icon"/>
+                  </svg>
+              </button>
+              <input class="Footer-checkbox" type="checkbox" name="AcceptedTerms" id="AcceptedTerms" required="">
+              <label class="Footer-checkbox-label" for="AcceptedTerms">He leído y acepto la <strong>Política de Privacidad</strong></label>
+          </form>
+          </div>
+        <div class="Footer-info">
+            <dl class="Footer-dl">
+                <dt class="Footer-dt Footer-dt--about">
+                    <span class="Footer-span">Sobre nosotros</span>
+                    <div class="Footer-svg">
+                        <svg width="30px" height="30px">
+                        <use href="#Caret-icon"></use>
+                    </svg>
+                    </div>
+                </dt>
+                    <dd class="Footer-dd Footer-dd--about">Sobre Bloom Events</dd>
+                    <dd class="Footer-dd Footer-dd--about">Nuestros valores</dd>
+            <dt class="Footer-dt Footer-dt--info">
+                <span class="Footer-span">Información</span>
+                <div class="Footer-svg">
+                    <svg width="30px" height="30px">
+                    <use href="#Caret-icon"></use>
+                </svg>
+                </div>
+            </dt>
+                    <dd class="Footer-dd Footer-dd--info">Eventos</dd>
+                    <dd class="Footer-dd Footer-dd--info">Noticias</dd>
+                <dt class="Footer-dt Footer-dt--contact">
+                    <span class="Footer-span">Contacto</span>
+                    <div class="Footer-svg">
+                        <svg width="30px" height="30px">
+                        <use href="#Caret-icon"></use>
+                    </svg>
+                    </div>
+                </dt>
+                    <dd class="Footer-dd Footer-dd--contact">FAQ'S</dd>
+                    <dd class="Footer-dd Footer-dd--contact">Contáctanos</dd>
+        </dl>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

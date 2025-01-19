@@ -1,0 +1,257 @@
+<!-- Esta es la página principal del proyecto y está compuesta por los siguientes bloques: 
+ SVG: No visibles, solo definición
+ Preload: Pantalla de presentaición antes de ver la página
+ Header: Con elementos de nagecación y logo
+ Cursor: Puntero de la página web
+ Scroll: Contenido de toda la home
+ Footer
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Bloom Events - Descubre los mejores eventos, música y noticias. Únete a nuestra comunidad y mantente al día con las últimas novedades.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Events</title>
+    <link rel="icon" type="image/svg" href="/Assets/index/bloom-events-logo2.svg">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Aquí defino los SVG con la etiqueta Symbol -->
+    <svg class="Bloom-svg">
+        <symbol id="Burger-icon" viewBox="0 0 24 24">
+            <g stroke-width="0"></g>
+            <g stroke-linecap="round" stroke-linejoin="round"></g>
+            <g> 
+                <path d="M20 7L4 7" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path> 
+                <path d="M20 12L4 12" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path> 
+                <path d="M20 17L4 17" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path> 
+            </g>
+        </symbol>
+        <symbol id="Close-icon" viewBox="0 0 24 24">
+            <g>
+                <path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z" fill="#ffffff"></path>
+            </g>
+        </symbol>
+        <symbol id="User-icon" viewBox="0 0 24 24">
+          <circle cx="12" cy="6" r="4" stroke="#ffffff" stroke-width="1.5" fill="none"></circle>
+          <path d="M20 17.5C20 19.9853 20 22 12 22C4 22 4 19.9853 4 17.5C4 15.0147 7.58172 13 12 13C16.4183 13 20 15.0147 20 17.5Z" stroke="#ffffff" stroke-width="1.5" fill="none"></path>
+        </symbol>
+        <symbol id="Social-icon" viewBox="0 0 24 24">
+            <path d="M12 9C10.3431 9 9 7.65685 9 6C9 4.34315 10.3431 3 12 3C13.6569 3 15 4.34315 15 6C15 7.65685 13.6569 9 12 9Z" stroke="#ffffff" stroke-width="1.5" fill="none"></path>
+            <path d="M5.5 21C3.84315 21 2.5 19.6569 2.5 18C2.5 16.3431 3.84315 15 5.5 15C7.15685 15 8.5 16.3431 8.5 18C8.5 19.6569 7.15685 21 5.5 21Z" stroke="#ffffff" stroke-width="1.5" fill="none"></path>
+            <path d="M18.5 21C16.8431 21 15.5 19.6569 15.5 18C15.5 16.3431 16.8431 15 18.5 15C20.1569 15 21.5 16.3431 21.5 18C21.5 19.6569 20.1569 21 18.5 21Z" stroke="#ffffff" stroke-width="1.5" fill="none"></path>
+            <path d="M20 13C20 10.6106 18.9525 8.46589 17.2916 7M4 13C4 10.6106 5.04752 8.46589 6.70838 7M10 20.748C10.6392 20.9125 11.3094 21 12 21C12.6906 21 13.3608 20.9125 14 20.748" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path>
+          </symbol>
+          <symbol id="Favorite-icon" viewBox="0 0 24 24">
+            <g stroke-width="0"></g>
+            <g stroke-linecap="round" stroke-linejoin="round"></g>
+            <g>
+              <path d="M8.96173 18.9109L9.42605 18.3219L8.96173 18.9109ZM12 5.50063L11.4596 6.02073C11.601 6.16763 11.7961 6.25063 12 6.25063C12.2039 6.25063 12.399 6.16763 12.5404 6.02073L12 5.50063ZM15.0383 18.9109L15.5026 19.4999L15.0383 18.9109ZM9.42605 18.3219C7.91039 17.1271 6.25307 15.9603 4.93829 14.4798C3.64922 13.0282 2.75 11.3345 2.75 9.1371H1.25C1.25 11.8026 2.3605 13.8361 3.81672 15.4758C5.24723 17.0866 7.07077 18.3752 8.49742 19.4999L9.42605 18.3219ZM2.75 9.1371C2.75 6.98623 3.96537 5.18252 5.62436 4.42419C7.23607 3.68748 9.40166 3.88258 11.4596 6.02073L12.5404 4.98053C10.0985 2.44352 7.26409 2.02539 5.00076 3.05996C2.78471 4.07292 1.25 6.42503 1.25 9.1371H2.75ZM8.49742 19.4999C9.00965 19.9037 9.55954 20.3343 10.1168 20.6599C10.6739 20.9854 11.3096 21.25 12 21.25V19.75C11.6904 19.75 11.3261 19.6293 10.8736 19.3648C10.4213 19.1005 9.95208 18.7366 9.42605 18.3219L8.49742 19.4999ZM15.5026 19.4999C16.9292 18.3752 18.7528 17.0866 20.1833 15.4758C21.6395 13.8361 22.75 11.8026 22.75 9.1371H21.25C21.25 11.3345 20.3508 13.0282 19.0617 14.4798C17.7469 15.9603 16.0896 17.1271 14.574 18.3219L15.5026 19.4999ZM22.75 9.1371C22.75 6.42503 21.2153 4.07292 18.9992 3.05996C16.7359 2.02539 13.9015 2.44352 11.4596 4.98053L12.5404 6.02073C14.5983 3.88258 16.7639 3.68748 18.3756 4.42419C20.0346 5.18252 21.25 6.98623 21.25 9.1371H22.75ZM14.574 18.3219C14.0479 18.7366 13.5787 19.1005 13.1264 19.3648C12.6739 19.6293 12.3096 19.75 12 19.75V21.25C12.6904 21.25 13.3261 20.9854 13.8832 20.6599C14.4405 20.3343 14.9903 19.9037 15.5026 19.4999L14.574 18.3219Z" fill="#000000"></path>
+            </g>
+          </symbol>
+          <symbol id="Next-arrow" viewBox="0 0 42 42">
+            <circle opacity="0.75" cx="20.914" cy="20.9141" r="20.9141" transform="rotate(90 20.914 20.9141)" fill="none"></circle>
+            <line x1="17.2772" y1="11.4846" x2="26.3974" y2="20.6049" stroke="#000"></line>
+            <line x1="16.5701" y1="29.725" x2="25.6903" y2="20.6047" stroke="#000"></line>
+        </symbol>
+        <symbol id="Prev-arrow" viewBox="0 0 42 42">
+            <circle opacity="0.75" cx="20.9141" cy="20.9141" r="20.9141" transform="rotate(-90 20.9141 20.9141)" fill="none"></circle>
+            <line x1="24.5509" y1="30.3435" x2="15.4307" y2="21.2233" stroke="#000"></line>
+            <line x1="25.258" y1="12.1031" x2="16.1378" y2="21.2234" stroke="#000"></line>
+        </symbol>
+        <symbol id="Caret-icon" viewBox="0 0 24 24" fill="none">
+            <g transform="rotate(180, 12, 12)">
+              <path d="M15 7L10 12L15 17" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </symbol>
+        <symbol id="Down-icon" viewBox="0 0 24 24" fill="none">
+            <g transform="rotate(270, 12, 12)">
+                <path d="M15 7L10 12L15 17" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </symbol>
+      </svg>
+      <!-- Pantalla que se muestra al ca la web -->
+    <div class="Preload">
+        <div class="Preload-logo">
+            <span class="Preload-title Preload-title--bloom">BLOOM</span>
+            <span class="Preload-title Preload-title--events">EVENTS</span>
+        </div>
+    </div>
+    <header class="Header Header--home">
+        <h1 class="Header-h1">
+            <a href="../index.html" class="Header-a Header-a--logo" title="Bloom Events - Home" >
+                <img class="Header-img" src="../Assets/index/bloom-events-logo.svg" alt="Bloom Events Logo">
+            </a>     
+        </h1>
+         <div class="Header-buttons">
+            <button class="Header-button Header-button--burger" title="Burger button">
+                <svg>
+                    <use href="#Burger-icon"/>
+                </svg>
+            </button>
+            <button class="Header-button Header-button--close" title="Close button">
+                <svg>
+                    <use href="#Close-icon" />
+                </svg>
+            </button>
+         </div>
+        <nav class="Header-nav">
+            <ul class="Header-ul">
+                <li class="Header-li"><a href="../events.html" class="Header-a" title="Bloom Events - Eventos" >Eventos</a></li>
+                <li class="Header-li"><a href="../music.html" class="Header-a" title="Bloom Events - Música" >Música</a></li>
+                <li class="Header-li"><a href="../news.html" class="Header-a" title="Bloom Events - Noticias" >Noticias</a></li>
+            </ul>
+        </nav>
+        <div class="Burger-logo">
+            <a href="../index.html" class="Header-a Header-a--logo" title="Bloom Events - Home" >
+                <img class="Header-img Header-img--mobile" src="../Assets/index/bloom-events-logo.svg" alt="Bloom Events Logo">
+            </a> 
+        </div>
+        <div class="Header-div">
+            <ul class="Header-ul Header-ul--social">
+                <li class="Header-li Header-li--social"><a href="#" class="Header-a Header-a--social" title="Bloom Events - Mi cuenta" >
+                    <svg class="Header-svg">
+                        <use href="#User-icon"/>
+                    </svg>
+                </a></li>
+                <li class="Header-li Header-li--social"><a href="#" class="Header-a Header-a--social" title="Bloom Events - Social" >
+                    <svg class="Header-svg">
+                        <use href="#Social-icon"/>
+                    </svg>
+                </a></li>
+            </ul>
+        </div>
+</header>
+<div class="Cursor"></div>
+<div class="Scroll">
+    <div class="Scroll-background">
+        <video class="Scroll-video" autoplay muted loop poster="/Assets/index/space-1164579_1280.webp">
+            <source src="../bloom-events/Assets/index/323-135992580_medium.webm" type="video/webm">
+            <source src="../Assets/index/323-135992580.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="Scroll-wrapper">
+        <main class="Scroll-main">
+            <section class="Scroll-section Scroll-section--heading">
+                <div class="Scroll-title">
+                    <h2 class="Scroll-heading Scroll-heading--h2">Bloom Events</h2>
+                    <h3 class="Scroll-heading Scroll-heading--h3">Encuentra tu <span class="Scroll-span Scroll-span--green">evento</span>, crea una <span class="Scroll-span Scroll-span--pink">historia</span>.</h3>
+                </div>
+            </section>
+        </main>
+        <div class="Scroll-media">
+            <picture class="Scroll-picture">
+                <img src="../Assets/index/dj-scenario-mobile.webp" alt="Bloom escenario" class="Scroll-img Scroll-img--scenario" loading="lazy">
+            </picture>
+            <picture class="Scroll-picture">
+                <img src="/Assets/index/info-booth-mobile.webp" alt="Bloom info" class="Scroll-img Scroll-img--info" loading="lazy">
+            </picture>
+            <picture class="Scroll-picture">
+                <img src="../Assets/index/bloom-festival-mobile.webp" alt="Bloom Festival" class="Scroll-img Scroll-img--fest" loading="lazy">
+            </picture>
+            <picture class="Scroll-picture">
+                <img src="../Assets/index/rest-zone-mobile.webp" alt="Bloom descanso" class="Scroll-img Scroll-img--rest" loading="lazy">
+            </picture>
+        </div>
+        <div class="Scroll-music">
+            <div class="Scroll-music-wrapper">
+                <div class="Scroll-playlist">
+                    <p class="Scroll-p">Relájate escuchando</p>
+                    <div class="Scroll-div">
+                        <iframe style="border-radius:10px" src="https://open.spotify.com/embed/playlist/4mV16VdBhLuL6ujRqMJYzy?utm_source=generator" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        <p class="Scroll-p Scroll-p--vertical"> nuestra lista más tranquila</p>
+                    </div>
+                </div>
+                <div class="Scroll-playlist">
+                    <p class="Scroll-p">O actívate con</p>
+                    <div class="Scroll-div">
+                        <iframe style="border-radius:10px" src="https://open.spotify.com/embed/playlist/3rq303Ek67A4SNrWhhi70s?utm_source=generator&theme=0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        <p class="Scroll-p Scroll-p--vertical"> nuestra lista más movida</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Marquee">
+            <div class="Marquee-wrapper">
+                <div class="Marquee-content">
+                        <a href="#" class="Marquee-a" title="Sorteo entradas"><h4 class="Marquee-text">Sorteamos 2 entradas al festival que elijas.</h4></a>
+                        <a href="#" class="Marquee-a" title="Sorteo entradas"><p class="Marquee-text">Sorteamos 2 entradas al festival que elijas.</p></a>
+                        <a href="#" class="Marquee-a" title="Sorteo entradas"><p class="Marquee-text">Sorteamos 2 entradas al festival que elijas.</p></a>
+                        <a href="#" class="Marquee-a" title="Sorteo entradas"><p class="Marquee-text">Sorteamos 2 entradas al festival que elijas.</p></a>
+                        <a href="#" class="Marquee-a Marquee-a--big" title="Sorteo entradas"><p class="Marquee-text">Sorteamos 2 entradas al festival que elijas.</p></a>
+                        <a href="#" class="Marquee-a Marquee-a--big" title="Sorteo entradas"><p class="Marquee-text">Sorteamos 2 entradas al festival que elijas.</p></a>
+                        <a href="#" class="Marquee-a Marquee-a--big" title="Sorteo entradas"><p class="Marquee-text">Sorteamos 2 entradas al festival que elijas.</p></a>
+                        <a href="#" class="Marquee-a Marquee-a--big" title="Sorteo entradas"><p class="Marquee-text">Sorteamos 2 entradas al festival que elijas.</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<footer class="Footer Footer-home">
+    <div class="Footer-wrapper">
+        <h5 class="Footer-logo">
+            <a href="../index.html" class="Footer-a" title="Bloom Events - Home">
+                <img src="../Assets/index/bloom-events-logo2.svg" alt="BE Logo" class="Footer-img" loading="lazy">
+            </a>
+        </h5>
+        <div class="Footer-newsletter">
+            <h6 class="Footer-h6">
+              <span class="Footer-span">Entérate de todas las novedades</span>
+            </h6>
+            <form class="Footer-form" action="/submit" method="POST">
+              <label class="Footer-label" for="email"></label>
+              <input class="Footer-input" type="email" id="email" name="email" placeholder="Introduce tu correo electrónico" required>
+              <!-- He deshabilitado la acciñon del botón submit para que no de error -->
+              <button class="Footer-submit" type="submit" title="Submit" disabled>
+                  <svg width="30px" height="30px">
+                      <use href="#Caret-icon"></use>
+                  </svg>
+              </button>
+              <input class="Footer-checkbox" type="checkbox" name="AcceptedTerms" id="AcceptedTerms" required="">
+              <label class="Footer-checkbox-label" for="AcceptedTerms">He leído y acepto la <strong>Política de Privacidad</strong></label>
+          </form>
+          </div>
+        <div class="Footer-info">
+            <dl class="Footer-dl">
+                    <dt class="Footer-dt Footer-dt--about">
+                        <span class="Footer-span">Sobre nosotros</span>
+                        <div class="Footer-svg">
+                            <svg width="30px" height="30px">
+                            <use href="#Caret-icon"></use>
+                        </svg>
+                        </div>
+                    </dt>
+                        <dd class="Footer-dd Footer-dd--about">Sobre Bloom Events</dd>
+                        <dd class="Footer-dd Footer-dd--about">Nuestros valores</dd>
+                <dt class="Footer-dt Footer-dt--info">
+                    <span class="Footer-span">Información</span>
+                    <div class="Footer-svg">
+                        <svg width="30px" height="30px">
+                        <use href="#Caret-icon"></use>
+                    </svg>
+                    </div>
+                </dt>
+                        <dd class="Footer-dd Footer-dd--info">Eventos</dd>
+                        <dd class="Footer-dd Footer-dd--info">Noticias</dd>
+                    <dt class="Footer-dt Footer-dt--contact">
+                        <span class="Footer-span">Contacto</span>
+                        <div class="Footer-svg">
+                            <svg width="30px" height="30px">
+                            <use href="#Caret-icon"></use>
+                        </svg>
+                        </div>
+                    </dt>
+                        <dd class="Footer-dd Footer-dd--contact">FAQ'S</dd>
+                        <dd class="Footer-dd Footer-dd--contact">Contáctanos</dd>
+            </dl>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

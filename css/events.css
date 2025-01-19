@@ -1,0 +1,273 @@
+:root{
+    font-size: 100%;
+    scroll-behavior: smooth;
+    --color-general-pink: #ff85ea;
+    --color-general-green: #00feca;
+    --color-general-background: #00130f;
+    --color-general-border-lines-green: #19302b;
+    --color-general-border-lines-pink: rgb(80, 41, 73);
+    --color-general--background-secondary-green: rgb(240, 240, 240, 0.2);
+    --color-general--background-secondary-pink: rgba(55, 37, 52, 0.929);
+    --color-general--background-terciary-pink: rgba(66, 45, 63, 0.9);
+    --main--vh: calc(100vh - 18rem);
+}
+.Main{
+    width: 100%;
+    height: var(--main--vh);
+    margin: 2rem 0rem 0rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.Main-swiper{
+    width: 100%;
+    max-width: 90vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+.Main-swiper.isHidden{
+    pointer-events: none;
+}
+.Main-picture{
+    width: 0%;
+    flex-grow: 1;
+    height: 60vh;
+    opacity: .5;
+    transition: transform .5s ease,
+    opacity .5s ease;
+}
+.Main-picture:hover{
+    width: 12.5rem;
+    transform: scale(1.1);
+    opacity: 1;
+    filter: contrast(110%);
+    transition: transform .6s ease,
+    opacity .5s ease;
+    z-index: 1;
+}
+.Main-img{
+    border-radius: .625rem;
+    box-shadow: .3125rem .3125rem .625rem black;
+    object-fit: cover;
+}
+.Evento{
+    width: 80%;
+    max-width: 70vh;
+    height: 40vh;
+    padding: 0rem 1.5rem;
+    background-color: var(--color-general--background-secondary-pink);
+    border-radius: .625rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .85rem;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+
+}
+.Evento.isVisible{
+    opacity: 1;
+    transform: scale(1.4);
+    transition: transform .5s ease;
+    pointer-events: all;
+}
+.Evento-title{
+    width: 100%;
+    padding: 1rem 0rem;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+    align-items: center;
+    gap: 10%;
+}
+.Evento-heading{
+    width: 70%;
+    font-size: 1.5rem;
+    border-bottom: .0625rem solid var(--color-general-border-lines-pink);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.Evento-button{
+    width: 1.3rem;
+    height: 1.3rem;
+    background-color: transparent;
+}
+.Evento-info{
+    width: 90%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: scroll;
+}
+.Evento-paragraphs{
+    width: 60%;
+    height: 28.5vh;
+    background-color: var(--color-general--background-terciary-pink);
+    border-radius: .625rem;
+    overflow: scroll;
+}
+.Evento-p{
+    margin: .625rem 0rem;
+}
+.Evento-details{
+    width: 35%;
+    height: 28.5vh;
+    padding: .5rem 0rem;
+    border-radius: .625rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--color-general--background-terciary-pink);
+    overflow: scroll;
+}
+.Evento-span{
+    width: 70%;
+    padding: 0rem 0rem .5rem;
+    border-bottom: .0625rem solid var(--color-general-border-lines-pink);
+    font-weight: bold;
+    text-align: center;
+}
+.Evento-ul{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+.Evento-li{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: .5rem;
+}
+.Evento-li svg{
+    width: 1rem;
+    height: 1rem;
+}
+.Evento-img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.Evento-more-info{
+    width: 100%;
+    padding: .5rem;
+    border-top: .0625rem solid var(--color-general-border-lines-pink);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.Evento-tickets{
+    width: 70%;
+    padding: 1rem 0rem;
+    border-top: .0625rem solid var(--color-general-border-lines-pink);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.Evento-a{
+    width: 50%;
+    max-width: 10rem;
+    background-color: white;
+    border-radius: .9rem;
+    padding: .3rem .6rem;
+    color: black;
+    text-decoration: underline;
+}
+@media (max-width: 1130px ){
+    .Evento{
+        max-width: 65vh;
+    }
+}
+@media (max-width: 768px){
+    .Main{
+        width: 100%;
+        height: 100vh;
+        overflow: scroll;
+    }
+    .Main-swiper{
+        width: 100%;
+        height: 100vh;
+        padding: 4.5rem 0rem;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: start;
+        align-items: center;
+        position: relative; 
+    }
+    .Main-picture{
+        width: 100%;
+        flex-grow: 1;
+        height: 60vh; 
+        opacity: .5;
+        transition: transform .5s ease,
+        opacity .5s ease;
+        height: 60vh;
+    }
+    .Main-picture:hover{
+        width: 100%;
+        height: 80vh;
+        transform: scale(1.1);
+        opacity: 1;
+        filter: contrast(110%);
+        transition: transform .6s ease,
+        opacity .5s ease;
+        z-index: 1;
+    }
+    .Evento{
+        max-width: 31.25rem;
+        padding: 0rem .5em;
+        top: 30%;
+    }
+    .Evento.isActive{
+        transform: scale(1.3);
+    }
+    .Evento-p{
+        font-size: .7rem;
+    }
+    .Evento-ul{
+     padding: 0rem .5rem;
+    }
+    .Evento-li{
+        font-size: .7rem;
+    }
+}
+@media (max-width: 480px){
+    .Main-picture{
+        opacity: 1;
+    }
+    .Main-picture:hover{
+    transform: scale(1);
+    
+    }
+    .Evento{
+        width: 65%;
+        position: fixed;
+        z-index: 1;
+    }
+    .Evento-details{
+        overflow: scroll;
+    }
+    .Evento-ul--Artists .Evento-li{
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: center;
+    }
+    .Evento-a{
+        width: 60%;
+        font-size: .7rem;
+    }
+}

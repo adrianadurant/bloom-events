@@ -1,0 +1,616 @@
+<!-- Esta página está compuesta por los siguientes bloques: 
+ SVG: No visibles, solo definición
+ Header: Con elementos de nagecación y logo
+ Cursor: Puntero de la página web
+Slider-news: Contiene la primera pantalla de carga y el contenindo de la página, incluido el footer.
+ -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Mantente al día en el mundo de la música electrónica con nuestras últimas noticias, entrevistas exclusivas a artistas y actualizaciones sobre la escena. Conéctate y descubre todo lo que necesitas saber sobre tus artistas favoritos y las tendencias actuantes.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Bloom Events - Noticias</title>
+    <link rel="icon" type="image/svg" href="/Assets/index/bloom-events-logo2.svg">
+    <link rel="stylesheet" href="../css/news.css" >
+    <link rel="stylesheet" href="../css/index.css" >
+    <script src="../js/index.js" defer></script>
+    <script src="../js/news.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    >
+  </head>
+  <body>
+    <!-- Aquí defino los SVG con la etiqueta Symbol -->
+    <svg class="Bloom-svg">
+      <symbol id="Burger-icon" viewBox="0 0 24 24">
+        <g stroke-width="0"></g>
+        <g stroke-linecap="round" stroke-linejoin="round"></g>
+        <g>
+          <path
+            d="M20 7L4 7"
+            stroke="#fff"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          ></path>
+          <path
+            d="M20 12L4 12"
+            stroke="#fff"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          ></path>
+          <path
+            d="M20 17L4 17"
+            stroke="#fff"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          ></path>
+        </g>
+      </symbol>
+      <symbol id="Close-icon" viewBox="0 0 24 24">
+        <g>
+          <path
+            d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z"
+            fill="#ffffff"
+          ></path>
+        </g>
+      </symbol>
+      <symbol id="User-icon" viewBox="0 0 24 24">
+        <circle
+          cx="12"
+          cy="6"
+          r="4"
+          stroke="#ffffff"
+          stroke-width="1.5"
+          fill="none"
+        ></circle>
+        <path
+          d="M20 17.5C20 19.9853 20 22 12 22C4 22 4 19.9853 4 17.5C4 15.0147 7.58172 13 12 13C16.4183 13 20 15.0147 20 17.5Z"
+          stroke="#ffffff"
+          stroke-width="1.5"
+          fill="none"
+        ></path>
+      </symbol>
+      <symbol id="Social-icon" viewBox="0 0 24 24">
+        <path
+          d="M12 9C10.3431 9 9 7.65685 9 6C9 4.34315 10.3431 3 12 3C13.6569 3 15 4.34315 15 6C15 7.65685 13.6569 9 12 9Z"
+          stroke="#ffffff"
+          stroke-width="1.5"
+          fill="none"
+        ></path>
+        <path
+          d="M5.5 21C3.84315 21 2.5 19.6569 2.5 18C2.5 16.3431 3.84315 15 5.5 15C7.15685 15 8.5 16.3431 8.5 18C8.5 19.6569 7.15685 21 5.5 21Z"
+          stroke="#ffffff"
+          stroke-width="1.5"
+          fill="none"
+        ></path>
+        <path
+          d="M18.5 21C16.8431 21 15.5 19.6569 15.5 18C15.5 16.3431 16.8431 15 18.5 15C20.1569 15 21.5 16.3431 21.5 18C21.5 19.6569 20.1569 21 18.5 21Z"
+          stroke="#ffffff"
+          stroke-width="1.5"
+          fill="none"
+        ></path>
+        <path
+          d="M20 13C20 10.6106 18.9525 8.46589 17.2916 7M4 13C4 10.6106 5.04752 8.46589 6.70838 7M10 20.748C10.6392 20.9125 11.3094 21 12 21C12.6906 21 13.3608 20.9125 14 20.748"
+          stroke="#ffffff"
+          stroke-width="1.5"
+          stroke-linecap="round"
+        ></path>
+      </symbol>
+      <symbol id="Favorite-icon" viewBox="0 0 24 24">
+        <g stroke-width="0"></g>
+        <g stroke-linecap="round" stroke-linejoin="round"></g>
+        <g>
+          <path
+            d="M8.96173 18.9109L9.42605 18.3219L8.96173 18.9109ZM12 5.50063L11.4596 6.02073C11.601 6.16763 11.7961 6.25063 12 6.25063C12.2039 6.25063 12.399 6.16763 12.5404 6.02073L12 5.50063ZM15.0383 18.9109L15.5026 19.4999L15.0383 18.9109ZM9.42605 18.3219C7.91039 17.1271 6.25307 15.9603 4.93829 14.4798C3.64922 13.0282 2.75 11.3345 2.75 9.1371H1.25C1.25 11.8026 2.3605 13.8361 3.81672 15.4758C5.24723 17.0866 7.07077 18.3752 8.49742 19.4999L9.42605 18.3219ZM2.75 9.1371C2.75 6.98623 3.96537 5.18252 5.62436 4.42419C7.23607 3.68748 9.40166 3.88258 11.4596 6.02073L12.5404 4.98053C10.0985 2.44352 7.26409 2.02539 5.00076 3.05996C2.78471 4.07292 1.25 6.42503 1.25 9.1371H2.75ZM8.49742 19.4999C9.00965 19.9037 9.55954 20.3343 10.1168 20.6599C10.6739 20.9854 11.3096 21.25 12 21.25V19.75C11.6904 19.75 11.3261 19.6293 10.8736 19.3648C10.4213 19.1005 9.95208 18.7366 9.42605 18.3219L8.49742 19.4999ZM15.5026 19.4999C16.9292 18.3752 18.7528 17.0866 20.1833 15.4758C21.6395 13.8361 22.75 11.8026 22.75 9.1371H21.25C21.25 11.3345 20.3508 13.0282 19.0617 14.4798C17.7469 15.9603 16.0896 17.1271 14.574 18.3219L15.5026 19.4999ZM22.75 9.1371C22.75 6.42503 21.2153 4.07292 18.9992 3.05996C16.7359 2.02539 13.9015 2.44352 11.4596 4.98053L12.5404 6.02073C14.5983 3.88258 16.7639 3.68748 18.3756 4.42419C20.0346 5.18252 21.25 6.98623 21.25 9.1371H22.75ZM14.574 18.3219C14.0479 18.7366 13.5787 19.1005 13.1264 19.3648C12.6739 19.6293 12.3096 19.75 12 19.75V21.25C12.6904 21.25 13.3261 20.9854 13.8832 20.6599C14.4405 20.3343 14.9903 19.9037 15.5026 19.4999L14.574 18.3219Z"
+            fill="#000000"
+          ></path>
+        </g>
+      </symbol>
+      <symbol id="Right-arrow" viewBox="0 0 24 24">
+        <path d="M4 12H20M20 12L16 8M20 12L16 16" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      </symbol>
+      <symbol id="Left-arrow" viewBox="0 0 24 24">
+        <path d="M4 12H20M4 12L8 8M4 12L8 16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      </symbol>
+      <symbol id="Next-arrow" viewBox="0 0 42 42">
+        <circle
+          opacity="0.75"
+          cx="20.914"
+          cy="20.9141"
+          r="20.9141"
+          transform="rotate(90 20.914 20.9141)"
+          fill="none"
+        ></circle>
+        <line
+          x1="17.2772"
+          y1="11.4846"
+          x2="26.3974"
+          y2="20.6049"
+          stroke="#000"
+        ></line>
+        <line
+          x1="16.5701"
+          y1="29.725"
+          x2="25.6903"
+          y2="20.6047"
+          stroke="#000"
+        ></line>
+      </symbol>
+      <symbol id="Prev-arrow" viewBox="0 0 42 42">
+        <circle
+          opacity="0.75"
+          cx="20.9141"
+          cy="20.9141"
+          r="20.9141"
+          transform="rotate(-90 20.9141 20.9141)"
+          fill="none"
+        ></circle>
+        <line
+          x1="24.5509"
+          y1="30.3435"
+          x2="15.4307"
+          y2="21.2233"
+          stroke="#000"
+        ></line>
+        <line
+          x1="25.258"
+          y1="12.1031"
+          x2="16.1378"
+          y2="21.2234"
+          stroke="#000"
+        ></line>
+      </symbol>
+      <symbol id="Caret-icon" viewBox="0 0 24 24" fill="none">
+        <g transform="rotate(180, 12, 12)">
+          <path
+            d="M15 7L10 12L15 17"
+            stroke="#ffffff"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </g>
+      </symbol>
+      <symbol id="Down-icon" viewBox="0 0 24 24" fill="none">
+        <g transform="rotate(270, 12, 12)">
+          <path
+            d="M15 7L10 12L15 17"
+            stroke="#ffffff"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </g>
+      </symbol>
+    </svg>
+    <header class="Header">
+      <h1 class="Header-h1">
+        <a href="../index.html" class="Header-a Header-a--logo" title="Bloom Events - Home">
+          <img
+            class="Header-img"
+            src="../Assets/index/bloom-events-logo.svg"
+            alt="Bloom Events Logo">
+        </a>
+      </h1>
+      <div class="Header-buttons">
+        <button class="Header-button Header-button--burger" title="Burger button">
+          <svg>
+            <use href="#Burger-icon" />
+          </svg>
+        </button>
+        <button class="Header-button Header-button--close" title="Close button">
+          <svg>
+            <use href="#Close-icon" />
+          </svg>
+        </button>
+      </div>
+      <nav class="Header-nav isActive">
+        <ul class="Header-ul">
+          <li class="Header-li"><a href="../events.html" class="Header-a" title="Bloom Events - Eventos">Eventos</a></li>
+          <li class="Header-li">
+            <a href="../music.html" class="Header-a" title="Bloom Events - Música">Música</a>
+          </li>
+          <li class="Header-li">
+            <a href="../news.html" class="Header-a" title="Bloom Events - Noticias">Noticias</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="Header-div">
+        <ul class="Header-ul Header-ul--social">
+          <li class="Header-li Header-li--social">
+            <a href="#" class="Header-a Header-a--social" title="Bloom Events - Mi cuenta">
+              <svg class="Header-svg">
+                <use href="#User-icon" />
+              </svg>
+            </a>
+          </li>
+          <li class="Header-li Header-li--social">
+            <a href="#" class="Header-a Header-a--social" title="Bloom Events - Social">
+              <svg class="Header-svg">
+                <use href="#Social-icon" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="Cursor"></div>
+    <div class="Slider-news">
+      <div class="Slider">
+        <div class="Slider-slide Intro">
+            <div class="Intro-section">
+              <p class="Intro-title">Noticias</p>
+              <p class="Intro-p">
+                Mantente informado sobre las últimas novedades en el mundo de la música electrónica. Descubre noticias, entrevistas con artistas y más .
+              </p>
+            </div>
+            <div class="Intro-svg">
+              <svg width="30px" height="30px">
+                <use href="#Down-icon"></use>
+              </svg>
+            </div>
+          </div>
+        <!-- Cadad article representa una noticia diferente -->
+          <article class="Slider-slide News-elrow">
+            <div class="News-swiper News-swiper--elrow">
+              <div class="News-slide">
+                <picture class="News-picture">
+                  <source
+                    srcset="../Assets/news/elrow-unvrs.webp"
+                    media="(min-width: 690px)">
+                  <source
+                    srcset="../Assets/news/elrow-comes-to-unvrs.webp"
+                    media="(max-width: 689px)">
+                  <img
+                    class="News-img"
+                    src="../Assets/news/elrow-unvrs.webp"
+                    alt="elrow goes to [UNVRS]"
+                    loading="lazy">
+                </picture>
+                <div class="News-view News-view--title">
+                  <p class="News-preview">elrow llega a [UNVRS]</p>
+                </div>
+                <div class="News-view News-view--button">
+                  <button class="News-button News-button--elrow" title="News button">
+                    Ver noticia
+                    <svg class="News-svg">
+                      <use href="#Right-arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="News-slide News-slide--content">
+                <div class="News-image News-image--elrow"></div>
+                <div class="News-content-grid">
+                  <div class="News-wrapper">
+                    <h2 class="News-heading">
+                      elrow anuncia su residencia semanal en [UNVRS]
+                    </h2>
+                    <div class="News-content">
+                      <div class="News-paragraphs">
+                        <p class="News-p">
+                          La icónica compañía de entretenimiento elrow, dirigida por
+                          los hermanos Arnau, ha anunciado una colaboración con el
+                          innovador hyperclub [UNVRS], liderado por Yann Pissenem.
+                          Desde el 7 de junio hasta el 4 de octubre de 2025, elrow
+                          presentará espectáculos semanales todos los sábados en un
+                          espacio tecnológico de vanguardia.
+                        </p>
+                        <p class="News-p">
+                          La residencia incluirá temáticas rediseñadas como
+                          Hallucinarium, Kaos Garden, Sambowdromo y Nowmads,
+                          combinando música electrónica, arte y tecnología para
+                          crear experiencias inmersivas. La temporada culminará con
+                          una Closing Party sorpresa. Según Ferran Pascual, director
+                          creativo de elrow: “Pasamos de experiencias centradas en
+                          el escenario a un entorno dinámico donde todo forma parte
+                          de la narrativa”.
+                        </p>
+                        <p class="News-p">
+                          [UNVRS], obra de Yann Pissenem, fusiona tecnología
+                          avanzada con diseño innovador, posicionándose como un
+                          referente global en la vida nocturna.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="News-back">
+                      <button class="News-button News-button--back News-button--back--elrow" title="News back button">
+                        <svg class="News-svg">
+                          <use href="#Left-arrow"></use>
+                          </svg>
+                        Atrás
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="News-video-container">
+                  <iframe
+                    class="News-video"
+                    src="https://www.youtube.com/embed/vjE6E6feNd8?si=0-ouQ35E-r3sgz3K"
+                    title="elrow goes to [UNVRS]"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    loading="lazy"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="Slider-slide News-sonar">
+            <div class="News-swiper News-swiper--sonar">
+              <div class="News-slide">
+                <picture class="News-picture">
+                  <img
+                    class="News-img News-img--right"
+                    src="../Assets/news/sonar-scaled.webp"
+                    alt="Sonar festival 2025"
+                    loading="lazy"
+                  >
+                </picture>
+                <div class="News-view News-view--title">
+                  <p class="News-preview">Sonar 2025 anuncia sus primeros artistas</p>
+                </div>
+                <div class="News-view News-view--button">
+                  <button class="News-button News-button--sonar" title="News button">
+                    Ver noticia
+                    <svg class="News-svg">
+                      <use href="#Right-arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="News-slide News-slide--content">
+                <div class="News-image News-image--sonar"></div>
+                <div class="News-content-grid">
+                  <div class="News-wrapper">
+                    <h3 class="News-heading">
+                      Sónar 2025 desvela el primer adelanto de su cartel
+                    </h3>
+                    <div class="News-content">
+                      <div class="News-paragraphs">
+                        <p class="News-p">
+                          Sónar Barcelona 2025 combina lo vanguardista y lo visceral
+                          con más de 60 artistas confirmados y una nueva identidad
+                          visual inspirada en un ballet mecánico industrial.
+                        </p>
+                        <p class="News-p">
+                          Entre los destacados, Nathy Peluso presenta en primicia su
+                          álbum Grasa, Richie Hawtin regresa como Plastikman con un
+                          show futurista, y Arca sorprende con una nueva propuesta.
+                          Además, Eric Prydz, BICEP y Overmono lideran las
+                          experiencias audiovisuales, mientras que Max Cooper y
+                          Daito Manabe exploran nuevos límites tecnológicos.
+                        </p>
+                        <p class="News-p">
+                          El festival incluye actuaciones como el dúo de Actress y
+                          Suzanne Ciani, el choque de titanes Skrillex b2b Blawan, y
+                          figuras icónicas como Peggy Gou, Four Tet, Helena Hauff y
+                          Mochakk.
+                        </p>
+                        <p class="News-p">
+                          Sónar de Día y Sónar+D se realizarán en Fira Montjuïc,
+                          mientras que Sónar de Noche tendrá lugar en Fira Gran Via.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="News-back">
+                      <button class="News-button News-button--back News-button--back--sonar" title="News back button">
+                        <svg class="News-svg">
+                          <use href="#Left-arrow"></use>
+                          </svg>
+                        Atrás
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="News-video-container">
+                  <iframe
+                    class="News-video"
+                    src="https://www.youtube.com/embed/_QuPHBAIV3U?si=tv_2iBZVQWJaU6jA"
+                    title="Sonar Festival 2025"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="Slider-slide News-tml">
+            <div class="News-swiper News-swiper--tml">
+              <div class="News-slide">
+                <picture class="News-picture">
+                  <source
+                    srcset="../Assets/news/one-desktop.webp"
+                    media="(min-width: 690px)"
+                  >
+                  <source
+                    srcset="../Assets/news/tml-one-mobile.webp"
+                    media="(max-width: 689px)"
+                  >
+                  <img
+                    class="News-img"
+                    src="../Assets/news/one-desktop.webp"
+                    alt="One 2024"
+                    loading="lazy"
+                  >
+                </picture>
+                <div class="News-view News-view--title">
+                  <p class="News-preview">Tomorrowland presenta: 'One Year'</p>
+                </div>
+                <div class="News-view News-view--button">
+                  <button class="News-button News-button--tml" title="News button">
+                    Ver noticia
+                    <svg class="News-svg">
+                      <use href="#Right-arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="News-slide News-slide--content">
+                <div class="News-image News-image--tomorrwoland"></div>
+                <div class="News-content-grid">
+                  <div class="News-wrapper">
+                    <h4 class="News-heading">
+                      Tomorrowland presenta 'One Year', una película con los
+                      momentos más destacados de 2024
+                    </h4>
+                    <div class="News-content">
+                      <div class="News-paragraphs">
+                        <p class="News-p">
+                            <strong>'One Year': La magia de Tomorrowland en formato cinematográfico</strong>
+                            Tomorrowland celebra su 20º aniversario con 'One Year', un documental de 45 minutos que revive los momentos más icónicos de sus festivales y eventos de 2024. La película captura el espíritu único de Tomorrowland, combinando música, emoción y relatos íntimos de artistas como Steve Aoki, Swedish House Mafia y Tiësto.
+                        </p>
+                        <p class="News-p">
+                            Producida por el equipo audiovisual del festival, incluye imágenes de Tomorrowland Belgium, Winter, Brasil, CORE Tulum, Ushuaïa Ibiza y más, ofreciendo una experiencia inmersiva que trasciende fronteras. Steve Aoki describe el documental como “la esencia de Tomorrowland en cada lugar y momento”.
+                        </p>
+                        <p class="News-p">
+                            'One Year' es un homenaje a la "People of Tomorrow", los millones de fans que han convertido el festival en un símbolo global de unión y creatividad. Perfecta para revivir la magia o descubrir por primera vez el fenómeno Tomorrowland.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="News-back">
+                      <button class="News-button News-button--back News-button--back--tml" title="News back button">
+                        <svg class="News-svg">
+                          <use href="#Left-arrow"></use>
+                          </svg>
+                        Atrás
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="News-image News-image--tml News-video-container"></div>
+              </div>
+            </div>
+          </article>
+          <footer class="Footer Slider-slide Footer-slider" id="Footer-slider">
+            <div class="Giveaway">
+              <div class="Giveaway-info">
+                <h5 class="Giveaway-heading">¿Quieres ganar 2 entradas al festival que tú quieras?</h5>
+                <p class="Giveaway-p">Sorteamos dos entradas para ti y para quien tú elijas para asistir al evento que quieras. Solo tienes que rellenar este cuestionario y entrarás en el sorteo.</p>
+                <p class="Giveaway-p">El ganador se anunciará el 31 de enero de 2025 a las 21:00 en nuestro instagram.</p>
+                <p class="Giveaway-p Giveaway-p--small">Consulta las bases legales <a class="Giveaway-a" href="#" title="Bases legales">aquí</a>.</p>
+              </div>
+              <form class="Giveaway-form" action="#" method="GET">
+                <label class="Giveaway-label" for="nombre">Nombre y apellidos:</label>
+                <input class="Giveaway-input" type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                
+                <label class="Giveaway-label" for="giveaway-email">Correo electrónico:</label>
+              <input class="Giveaway-input" type="email" id="giveaway-email" name="giveaway-email" placeholder="Escribe tu correo" required>
+  
+              <label class="Giveaway-label" for="telefono">Número de teléfono:</label>
+              <input class="Giveaway-input" type="tel" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono">
+  
+              <label class="Giveaway-label" for="genero">¿Cuál es tu género favorito?</label>
+              <select class="Giveaway-input" id="genero" name="genero" required>
+                  <option value="">Selecciona una opción</option>
+                  <option value="Techno">Techno</option>
+                  <option value="House">House</option>
+                  <option value="Groove">Groove</option>
+                  <option value="Tech-house">Tech-house</option>
+                  <option value="Hardstyle">Hardstyle</option>
+                  <option value="Hard techno">Hard techno</option>
+                  <option value="Otro">Otro</option>
+              </select>
+  
+              <label class="Giveaway-label" for="festival">¿A qué festival te encantaría ir?</label>
+              <input class="Giveaway-input" type="text" id="festival" name="festival" placeholder="Escribe el nombre del festival" required>
+  
+              <label class="Giveaway-label" for="reason">Explícanos por qué eliges este festival:</label>
+              <textarea class="Giveaway-input" id="reason" name="reason" rows="4" placeholder="Cuéntanos por qué es tan especial" required></textarea>
+  
+              <div class="Giveaway-checkbox">
+                  <input type="checkbox" id="legal-bases" name="bases" required>
+                  <label class="Giveaway-label" for="legal-bases"><a href="#" title="Bases legales">Acepto las bases legales del sorteo.</a></label>
+              </div>
+              <button class="Giveaway-button" type="submit" title="Submit" disabled>Participa ahora</button>
+            </form>
+          </div>
+              <div class="Footer-wrapper">
+                <span class="Footer-logo">
+                    <a href="../index.html" class="Footer-a" title="Bloom Events - Home">
+                      <img
+                        src="../Assets/index/bloom-events-logo2.svg"
+                        alt="BE Logo"
+                        class="Footer-img"
+                      >
+                    </a>
+                  </span>
+                  <div class="Footer-newsletter">
+                    <h6 class="Footer-h6">
+                      <span class="Footer-span">Entérate de todas las novedades</span>
+                    </h6>
+                    <form class="Footer-form" action="#" method="GET">
+                      <label class="Footer-label" for="email"></label>
+                      <input
+                        class="Footer-input"
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Introduce tu correo electrónico"
+                        required
+                      >
+                      <!-- He deshabilitado la acciñon del botón submit para que no de error al pulsarlo -->
+                      <button class="Footer-submit" type="submit" title="Submit" disabled>
+                        <svg width="30px" height="30px">
+                          <use href="#Caret-icon"></use>
+                        </svg>
+                      </button>
+                      <input
+                        class="Footer-checkbox"
+                        type="checkbox"
+                        name="AcceptedTerms"
+                        id="AcceptedTerms"
+                        required=""
+                      >
+                      <label class="Footer-checkbox-label" for="AcceptedTerms">
+                        He leído y acepto la <strong>Política de Privacidad</strong>
+                      </label>
+                    </form>
+                  </div>
+                  <div class="Footer-info">
+                    <dl class="Footer-dl">
+                      <dt class="Footer-dt Footer-dt--about">
+                          <span class="Footer-span">Sobre nosotros</span>
+                          <div class="Footer-svg">
+                              <svg width="30px" height="30px">
+                              <use href="#Caret-icon"></use>
+                          </svg>
+                          </div>
+                      </dt>
+                          <dd class="Footer-dd Footer-dd--about">Sobre Bloom Events</dd>
+                          <dd class="Footer-dd Footer-dd--about">Nuestros valores</dd>
+                  <dt class="Footer-dt Footer-dt--info">
+                      <span class="Footer-span">Información</span>
+                      <div class="Footer-svg">
+                          <svg width="30px" height="30px">
+                          <use href="#Caret-icon"></use>
+                      </svg>
+                      </div>
+                  </dt>
+                          <dd class="Footer-dd Footer-dd--info">Eventos</dd>
+                          <dd class="Footer-dd Footer-dd--info">Noticias</dd>
+                      <dt class="Footer-dt Footer-dt--contact">
+                          <span class="Footer-span">Contacto</span>
+                          <div class="Footer-svg">
+                              <svg width="30px" height="30px">
+                              <use href="#Caret-icon"></use>
+                          </svg>
+                          </div>
+                      </dt>
+                          <dd class="Footer-dd Footer-dd--contact">FAQ'S</dd>
+                          <dd class="Footer-dd Footer-dd--contact">Contáctanos</dd>
+              </dl>
+                  </div>
+            </div>
+          </footer>
+      </div>
+    </div>
+  </body>
+</html>

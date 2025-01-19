@@ -1,0 +1,471 @@
+/* Estilos generales de la web */
+:root{
+    --general-font-family: "Quicksand", sans-serif;
+    --color-general-pink: #ff85ea;
+    --color-general-green: #00feca;
+    --color-general--background: #00130f;
+    --color-general--background-secondary-green: rgb(240, 240, 240, 0.2);
+    --color-general-border-lines-green: #19302b;
+}
+body{
+    height: 100vh;
+}
+.Slider-news{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.Slider{
+    height: calc(100vh * 5);
+}
+.Slider-slide{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.News-swiper{
+    width: calc(100% * 2);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    position: relative;
+    transition: transform .5s ease;
+}
+.News-slide{
+    width: 100vw;
+    background-color: var(--color-general--background);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.News-picture{
+    height: 100vh;
+}
+/* La imagen cubre todo el espacio */
+.News-img{
+    object-fit: cover;
+}
+.News-img--right{
+    object-position: right center;
+}
+.News-view{
+    width: 60%;
+    max-width: 31rem;
+    background-color: #f0f8f6;
+    padding: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    position: absolute;
+    bottom: 21%;
+    color: var(--color-general--background);
+    text-align: center;
+    text-transform: uppercase;
+}
+.News-view--title{
+    left: 0;
+}
+.News-view--button{
+    width: 20%;
+    right: 0;
+}
+.News-preview{
+    padding: 0rem 0rem .2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.News-button{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: var(--color-general--background);
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.News-svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: .5rem;
+}
+.News-button--back{
+    color: var(--color-general-green);
+}
+.News-button--back svg{
+    stroke: var(--color-general-green);
+    fill: var(--color-general-green);
+}
+.News-slide--content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.News-image{
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+/* Imágenes como fondo del area de fotos de la noticia */
+.News-image--elrow{
+    background-image: url(../Assets/news/Elrow_OOH_LondonLeicester_1-1600x1067.webp);
+}
+.News-image--sonar{
+    background-image: url(../Assets/news/highxtar-nathy-peluso-sonar-2025-1-1440x937.webp);
+}
+.News-image--tomorrwoland{
+    background-image: url(../Assets/news/tomorrowland-fireworks.webp);
+    
+}
+.News-image--tml{
+    background-image: url(../Assets/news/Tomorrowland-One-Year.webp);
+}
+.News-video-container{
+    height: 50vh;
+}
+.News-video{
+    width: 100%;
+    height: 100%;
+}
+.News-content-grid{
+    display: flex;
+    grid-row: span 2;
+    position: relative;
+}
+.News-wrapper{
+    width: 80%;
+    max-width: 35rem;
+    height: 70vh;
+    max-height: 37.5rem;
+    background-color: var(--color-general--background-secondary-green);
+    margin: auto;
+    padding: 1rem;
+    border-radius: .625rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.News-content{
+    height: 60vh;
+    overflow: scroll;
+}
+.News-heading{
+    width: 100%;
+    border-bottom: .0625rem solid var(--color-general-border-lines-green);
+    padding: 0rem 0rem .5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-general-pink);
+}
+.News-paragraphs{
+    border-radius: .625rem;
+    border-bottom: .0625rem solid var(--color-general-border-lines-green);
+    background-color: rgba(0, 19, 15, 0.5);
+}
+.News-p{
+    margin: 1rem 0rem;
+    line-height: 1.5;
+}
+.News-back{
+    padding: 1rem 0rem 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    color: var(--color-general-pink);
+}
+.News-ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: .625rem;
+}
+.More-news{
+    height: calc(100vh - 11rem);
+    padding: 13rem 0rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: none;
+}
+.More-news-wrapper{
+    width: 90%;
+    max-width: 50rem;
+    background-color: var(--color-general--background-secondary-green);
+    padding: 1rem 0rem 0rem;
+    border-radius: .625rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+}
+.More-news-title{
+    padding: 1rem 2rem 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+.More-news-p{
+    width: 50%;
+    border-bottom: .125rem solid var(--color-general-pink);
+}
+.More-news-a:hover{
+    text-decoration: underline;
+}
+.More-news-ul{
+    padding: 1rem 0rem;
+    border-radius: .625rem;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    align-items: start;
+    justify-items: center;
+}
+.More-news-li{
+    width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    color: var(--color-general--background);
+    position: relative;
+}
+.More-news-img{
+    border-radius: .625rem;
+    object-fit: cover;
+}
+.More-news-cover{
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.More-news-cover:hover{
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+.More-news-info{
+    width: 100%;
+    background-color: #f0f8f6;
+    border-radius: .625rem;
+}
+.Footer.Footer-slider{
+    width: 100%;
+    height: 100vh;
+    padding: 9rem 0rem 0rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.Giveaway{
+    width: 90%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.Giveaway-info{
+    width: 50%;
+    max-width: 50rem;
+    padding: 1rem;
+    border-radius: .625rem;
+    transform: translateX(10%);
+    background: linear-gradient(90deg, rgba(25,48,43,1) 0%, rgba(25,48,43,0.70) 25%, rgba(25,48,43,0.44) 50%, rgba(25,48,43,0.18) 75%, rgba(25,48,43,0) 100%);
+}
+/* Dejo el valor del border-bottom en px porque considero que es muy bajo para ponerlo en rem */
+.Giveaway-heading{
+    width: 85%;
+    padding: .5rem 0rem;
+    margin: 0rem 0rem 1rem;
+    border-bottom: 1px solid var(--color-general-pink);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.Giveaway-p{
+    margin: 0rem 0rem 2rem;
+    font-size: 1.2rem;
+}
+.Giveaway-form{
+    width: 60%;
+    max-width: 35rem;
+    padding: 1.5rem 1rem;
+    border-radius: .625rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    text-align: start;
+}
+.Giveaway-label{
+    width: 70%;
+    font-size: 1.2rem;
+    display: block;
+}
+.Giveaway-input:focus{
+    outline: none;
+    border-bottom: 1px solid var(--color-general-pink);
+}
+.Giveaway-input{
+    width: 70%;
+    padding: .5rem;
+    margin: .5rem 0rem;
+    background-color: transparent;
+    border-bottom: .0625rem solid var(--color-general-border-lines-green);
+    font-family: var(--general-font-family);
+    color: var(--color-general-pink);
+    font-size: 1rem;
+}
+.Giveaway-checkbox{
+    width: 70%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    gap: 1rem;
+}
+.Giveaway-checkbox .Giveaway-label{
+    width: 100%;
+    font-size: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+}
+.Giveaway-button{
+    margin: .5rem 0rem 0rem;
+    padding: .5rem 1rem;
+    background-color: var(--color-general-pink);
+    font-family: var(--general-font-family);
+    font-weight: 800;
+    border-radius: .625rem;
+    text-transform: uppercase;
+}
+@media (max-width: 960px) {
+    .News-slide--content{
+        grid-template-areas: 
+        "content content"
+        "image video";
+    }
+    .News-image{
+        grid-area: image;
+    }
+    .News-content-grid{
+        grid-area: content;
+        width: 100%;
+        padding: 1rem;
+    }
+    .News-wrapper{
+        width: 100%;
+        height: 45vh;
+    }
+    .News-heading{
+        font-size: 1.7rem;
+    }
+    .News-video-container{
+        grid-area: video;
+    }
+    .Giveaway{
+        width: 100%;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
+    .Giveaway-info{
+        width: 100%;
+        transform: translateX(0);
+        background: linear-gradient(180deg, rgba(25,48,43,1) 0%, rgba(25,48,43,0.7077424719887955) 25%, rgba(25,48,43,0.444437149859944) 50%, rgba(25,48,43,0.18393294817927175) 75%, rgba(25,48,43,0) 100%);
+    }
+    .Giveaway-heading{
+        width: 100%;
+        font-size: 1.1rem;
+    }
+    .Giveaway-p{
+        font-size: 1rem;
+        margin: 0rem 0rem 1rem;
+    }
+    .Giveaway-form{
+        width: 95%;
+        max-width: 50rem;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+    }
+    .Giveaway-label{
+        width: 100%;
+        font-size: .95rem;
+    }
+    .Giveaway-input{
+        width: 100%;
+    }
+    .Giveaway-checkbox{
+        width: 100%;
+    }
+}
+@media (max-width: 690px){
+    .News-view{
+        width: 70%;
+    }
+    .News-preview{
+        font-size: 1.5rem;
+    }
+    .More-news-wrapper{
+        width: 70%;
+    }
+    .More-news-ul{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-content: center;
+    }
+    .More-news-li{
+        width: 70%;
+    }
+}
+@media (max-width: 480px) {
+    .News-view{
+        width: 100%;
+        bottom: 11%;
+    }
+    .News-slide--content{
+        grid-template-areas: 
+        "image image"
+        "content content"
+        "video video";
+    }
+    .News-image{
+        grid-area: image;
+        height: 33vh;
+    }
+    .News-content-grid{
+        grid-area: content;
+        height: 33vh;
+    }
+    .News-wrapper{
+        height: 30vh;
+    }
+    .News-heading{
+        font-size: 1.2rem;
+    }
+    .News-back{
+        padding: .5rem 0rem 0rem;
+    }
+    .News-video-container{
+        grid-area: video;
+        height: 33vh;
+    }
+}

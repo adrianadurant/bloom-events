@@ -1,0 +1,1059 @@
+<!-- Esta página está compuesta por los siguientes bloques: 
+ SVG: No visibles, solo definición
+ Header: Con elementos de nagecación y logo
+ Cursor: Puntero de la página web
+Slider: Contiene la primera pantalla de carga y el contenindo de la página.
+ Footer
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Descubre las últimas tendencias, los éxitos del momento y las canciones que no dejan de sonar.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Events - Música</title>
+    <link rel="icon" type="image/svg" href="/Assets/index/bloom-events-logo2.svg">
+    <link rel="stylesheet" href="../css/music.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/music.js" defer></script>
+    <script src="../js/index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-- Aquí defino los SVG con la etiqueta Symbol -->
+     <svg xmlns="http://www.w3.org/2000/svg" class="Bloom-svg">
+        <symbol id="Burger-icon" viewBox="0 0 24 24">
+            <g stroke-width="0"></g>
+            <g stroke-linecap="round" stroke-linejoin="round"></g>
+            <g> 
+                <path d="M20 7L4 7" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path> 
+                <path d="M20 12L4 12" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path> 
+                <path d="M20 17L4 17" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path> 
+            </g>
+        </symbol>
+        <symbol id="Close-icon" viewBox="0 0 24 24">
+            <g>
+                <path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z" fill="#ffffff"></path>
+            </g>
+        </symbol>
+        <symbol id="User-icon" viewBox="0 0 24 24">
+          <circle cx="12" cy="6" r="4" stroke="#ffffff" stroke-width="1.5" fill="none"></circle>
+          <path d="M20 17.5C20 19.9853 20 22 12 22C4 22 4 19.9853 4 17.5C4 15.0147 7.58172 13 12 13C16.4183 13 20 15.0147 20 17.5Z" stroke="#ffffff" stroke-width="1.5" fill="none"></path>
+        </symbol>
+        <symbol id="Social-icon" viewBox="0 0 24 24">
+            <path d="M12 9C10.3431 9 9 7.65685 9 6C9 4.34315 10.3431 3 12 3C13.6569 3 15 4.34315 15 6C15 7.65685 13.6569 9 12 9Z" stroke="#ffffff" stroke-width="1.5" fill="none"></path>
+            <path d="M5.5 21C3.84315 21 2.5 19.6569 2.5 18C2.5 16.3431 3.84315 15 5.5 15C7.15685 15 8.5 16.3431 8.5 18C8.5 19.6569 7.15685 21 5.5 21Z" stroke="#ffffff" stroke-width="1.5" fill="none"></path>
+            <path d="M18.5 21C16.8431 21 15.5 19.6569 15.5 18C15.5 16.3431 16.8431 15 18.5 15C20.1569 15 21.5 16.3431 21.5 18C21.5 19.6569 20.1569 21 18.5 21Z" stroke="#ffffff" stroke-width="1.5" fill="none"></path>
+            <path d="M20 13C20 10.6106 18.9525 8.46589 17.2916 7M4 13C4 10.6106 5.04752 8.46589 6.70838 7M10 20.748C10.6392 20.9125 11.3094 21 12 21C12.6906 21 13.3608 20.9125 14 20.748" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path>
+          </symbol>
+          <symbol id="Favorite-icon" viewBox="0 0 192 192">
+            <path d="M60.732 29.7C41.107 29.7 22 39.7 22 67.41c0 27.29 45.274 67.29 74 94.89 28.744-27.6 74-67.6 74-94.89 0-27.71-19.092-37.71-38.695-37.71C116 29.7 104.325 41.575 96 54.066 87.638 41.516 76 29.7 60.732 29.7z" style="clip-rule:evenodd;display:inline;stroke:#ffffff;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"></path>
+          </symbol>
+          <symbol id="Next-arrow" viewBox="0 0 42 42">
+            <circle opacity="0.75" cx="20.914" cy="20.9141" r="20.9141" transform="rotate(90 20.914 20.9141)" fill="none"></circle>
+            <line x1="17.2772" y1="11.4846" x2="26.3974" y2="20.6049" stroke="#000"></line>
+            <line x1="16.5701" y1="29.725" x2="25.6903" y2="20.6047" stroke="#000"></line>
+        </symbol>
+        <symbol id="Prev-arrow" viewBox="0 0 42 42">
+            <circle opacity="0.75" cx="20.9141" cy="20.9141" r="20.9141" transform="rotate(-90 20.9141 20.9141)" fill="none"></circle>
+            <line x1="24.5509" y1="30.3435" x2="15.4307" y2="21.2233" stroke="#000"></line>
+            <line x1="25.258" y1="12.1031" x2="16.1378" y2="21.2234" stroke="#000"></line>
+        </symbol>
+        <symbol id="Caret-icon" viewBox="0 0 24 24" fill="none">
+            <g transform="rotate(180, 12, 12)">
+              <path d="M15 7L10 12L15 17" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </symbol>
+        <symbol id="Down-icon" viewBox="0 0 24 24" fill="none">
+            <g transform="rotate(270, 12, 12)">
+                <path d="M15 7L10 12L15 17" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </symbol>
+      </svg>
+      <header class="Header">
+            <h1 class="Header-h1">
+                <a href="../index.html" class="Header-a Header-a--logo" title="Bloom Events - Home" >
+                    <img class="Header-img" src="../Assets/index/bloom-events-logo.svg" alt="Bloom Events Logo">
+                </a>     
+            </h1>
+             <div class="Header-buttons">
+                <button class="Header-button Header-button--burger" title="Burger button">
+                    <svg>
+                        <use href="#Burger-icon"/>
+                    </svg>
+                </button>
+                <button class="Header-button Header-button--close" title="Close button">
+                    <svg>
+                        <use href="#Close-icon" />
+                    </svg>
+                </button>
+             </div>
+            <nav class="Header-nav">
+                <ul class="Header-ul">
+                    <li class="Header-li"><a href="../events.html" class="Header-a" title="Bloom Events - Home">Eventos</a></li>
+                    <li class="Header-li"><a href="../music.html" class="Header-a" title="Bloom Events - Música">Música</a></li>
+                    <li class="Header-li"><a href="../news.html" class="Header-a" title="Bloom Events - Noticias">Noticias</a></li>
+                </ul>
+            </nav>
+            <div class="Burger-logo">
+                <a href="../index.html" class="Header-a Header-a--logo" title="Bloom Events - Home">
+                    <img class="Header-img Header-img--mobile" src="../Assets/index/bloom-events-logo.svg" alt="Bloom Events Logo">
+                </a> 
+            </div>
+            <div class="Header-div">
+                <ul class="Header-ul Header-ul--social">
+                    <li class="Header-li Header-li--social"><a href="#" class="Header-a Header-a--social" title="Bloom Events - Mi cuenta">
+                        <svg class="Header-svg">
+                            <use href="#User-icon"/>
+                        </svg>
+                    </a></li>
+                    <li class="Header-li Header-li--social"><a href="#" class="Header-a Header-a--social" title="Bloom Events - Social">
+                        <svg class="Header-svg">
+                            <use href="#Social-icon"/>
+                        </svg>
+                    </a></li>
+                </ul>
+            </div>
+    </header>
+    <div class="Cursor"></div>
+    <div class="Slider">
+        <div class="Slider-slide Intro">
+            <section class="Intro-section">
+                <h2 class="Intro-h2">Música</h2>
+                <p class="Intro-p">Descubre las últimas tendencias, los éxitos del momento y las canciones que no dejan de sonar.</p>
+            </section>
+            <div class="Intro-svg">
+                <svg width="1.875rem" height="1.875rem">
+                    <use href="#Down-icon"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="Title">
+            <h3 class="Title-text">Música</h3>
+        </div>
+        <section class="Music">
+            <div class="Music-categories"> 
+                <div class="Music-categorie-wrapper">
+                    <h4 class="Music-categorie-title">Últimos lanzamientos</h4>
+                    <div class="Music-categorie-more">
+                        <a href="#" class="Music-a" title="Ver todo">Ver todo</a>
+                    </div>
+                </div>   
+                <div class="Music-songs-wrapper">
+                    <button class="Music-arrow Next New-releases--next" title="Next button">
+                        <svg class="Music-svg Music-svg--fav">
+                            <use href="#Next-arrow"></use>
+                        </svg>
+                    </button>
+                    <button class="Music-arrow Prev New-releases--prev" title="Prev button">
+                        <svg class="Music-svg Music-svg--fav">
+                            <use href="#Prev-arrow"></use>
+                        </svg>
+                    </button>
+                    <ul class="Music-list Music-list--ul New-releases">
+                        <li class="Music-li New-releases--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-000586594835-2o2i4r-t500x500.jpg" alt="Starting Again - &Me" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                    <svg class="Music-svg Music-svg--fav">
+                                        <use href="#Favorite-icon"/>
+                                    </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Starting again</li>
+                                <li class="Music-info">&MEli</li>
+                                <li class="Music-info">1995</li>
+                                <li class="Music-info">7:55</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li New-releases--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-1pmlD3gAePYV-0-t500x500.jpg" alt="Believe - Superflu" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Believe</li>
+                                <li class="Music-info">Superflu</li>
+                                <li class="Music-info">Believe</li>
+                                <li class="Music-info">3:50</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li New-releases--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-aUudrfQ5rkGn-0-t500x500.jpg" alt="Guard Down - Gordo & Alice Aera" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Guard down</li>
+                                <li class="Music-info">Gordo & Alice Aera</li>
+                                <li class="Music-info">DIAMANTE</li>
+                                <li class="Music-info">5.46</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li New-releases--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-CcCzWSZKSsiC43Wy-N2jUfA-t500x500.jpg" alt="Telepathic - Massano" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Telepathic</li>
+                                <li class="Music-info">Massano</li>
+                                <li class="Music-info">Drumcode presents: 2024</li>
+                                <li class="Music-info">6:22</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li New-releases--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-YeXOPxhO9F6e-0-t500x500.jpg" alt="Rockin To The Rythm - Restricted" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Rockin to the rythm</li>
+                                <li class="Music-info">Restricted</li>
+                                <li class="Music-info">Rockin to the rythm</li>
+                                <li class="Music-info">4:32</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li New-releases--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-s17Hl4wBJXJs-0-t500x500.jpg" alt="You - BUNT." class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">You</li>
+                                <li class="Music-info">BUNT.</li>
+                                <li class="Music-info">You</li>
+                                <li class="Music-info">2:54</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li New-releases--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-3oMsh360CPrz-0-t500x500.jpg" alt="The Way It Goes - Swimming Paul" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">The way it goes</li>
+                                <li class="Music-info">Swimming Paul</li>
+                                <li class="Music-info">Smiling Through The Pain</li>
+                                <li class="Music-info">3:05</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li New-releases--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-vhoQ1Jhbpg8MXzXj-zTacLw-t240x240.jpg" alt="Like A Boss - Lil Texas ft. Holy Priest" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Like a boss</li>
+                                <li class="Music-info">Lil Texas ft. Holy Priest</li>
+                                <li class="Music-info">Like A Boss</li>
+                                <li class="Music-info">2:48</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li New-releases--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszINcDNWmxSm8qvmjcKCkE1uuhB7G5xDdig&s" alt="Got The Fire - Michael Bibi" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Got the fire</li>
+                                <li class="Music-info">Michael Bibi</li>
+                                <li class="Music-info">Got the fire EP</li>
+                                <li class="Music-info">3:41</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li New-releases--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-3pOj5KZJMHMl7Bii-rscwOQ-t1080x1080.png" alt="Diablo - Zatox & Holy Priest" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Diablo</li>
+                                <li class="Music-info">Zatox & Holy Priest</li>
+                                <li class="Music-info">Diablo</li>
+                                <li class="Music-info">2:43</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Music-categories"> 
+                <div class="Music-categorie-wrapper">
+                    <div class="Music-categorie-title">Top 10 canciones</div>
+                    <div class="Music-categorie-more">
+                        <a href="#" class="Music-a" title="Ver todo">Ver todo</a>
+                    </div>
+                </div>  
+                <div class="Music-songs-wrapper">
+                    <button class="Music-arrow Next Top-songs--next" title="Next button">
+                        <svg class="Music-svg Music-svg--fav">
+                            <use href="#Next-arrow"></use>
+                        </svg>
+                    </button>
+                    <button class="Music-arrow Prev Top-songs--prev" title="Prev button">
+                        <svg class="Music-svg Music-svg--fav">
+                            <use href="#Prev-arrow"></use>
+                        </svg>
+                    </button>
+                    <ol class="Music-list Music-list--ol Top-songs">
+                        <li class="Music-li Top-songs--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-000136660669-0chphs-t500x500.jpg" alt="Innerbloom - RÜFÜS DU SOL" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Innerbloom</li>
+                                <li class="Music-info">RÜFÜS DU SOL</li>
+                                <li class="Music-info">Bloom</li>
+                                <li class="Music-info">9:38</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li Top-songs--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-RCEX5fGOi0Fr-0-t500x500.jpg" alt="The Way You Say - Carlita " class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">The way you say</li>
+                                <li class="Music-info">Carlita</li>
+                                <li class="Music-info">The way you say (remixes)</li>
+                                <li class="Music-info">2:56</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li Top-songs--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-6st4YU45fg3u-0-t500x500.jpg" alt="TRIPPIN - BUNT., Mapei" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">TRIPPIN</li>
+                                <li class="Music-info">BUNT., Mapei</li>
+                                <li class="Music-info">TRIPPIN</li>
+                                <li class="Music-info">3:23</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li Top-songs--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-a7c54693-d83d-410c-8600-e3cbe7e9f046-0-t500x500.jpg" alt="Promises - Nero" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Promises</li>
+                                <li class="Music-info">Nero</li>
+                                <li class="Music-info">Welcome reality</li>
+                                <li class="Music-info">4:17</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li Top-songs--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-000559543494-6px6vp-t500x500.jpg" alt="Beautiful Chaos - Hozho" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Beautiful chaos</li>
+                                <li class="Music-info">Hozho</li>
+                                <li class="Music-info"> Yin Yang</li>
+                                <li class="Music-info">9:55</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li Top-songs--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-59SLOgbGFE0C-0-t500x500.png" alt="Claire - Anyma" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Claire</li>
+                                <li class="Music-info">Anyma</li>
+                                <li class="Music-info">Claire</li>
+                                <li class="Music-info">4:48</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li Top-songs--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-IrE8FlfRpFTO4wON-jXTVYw-t500x500.jpg" alt="Moment - PaulWeltz, Dillistone" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Moment</li>
+                                <li class="Music-info">PaulWeltz, Dillistone</li>
+                                <li class="Music-info">Moment</li>
+                                <li class="Music-info">3:13</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li Top-songs--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-6pnkocB0WC1NzoMF-M5qYAw-t1080x1080.jpg" alt="Howling - SOMMA" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Howling</li>
+                                <li class="Music-info">SOMMA</li>
+                                <li class="Music-info">Howling</li>
+                                <li class="Music-info">3:08</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li Top-songs--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-MaabKlXGHd1Y-0-t500x500.jpg" alt="Numb - Elderbrook" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Numb</li>
+                                <li class="Music-info">Elderbrook</li>
+                                <li class="Music-info">Numb</li>
+                                <li class="Music-info">3:19</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li Top-songs--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-bj511RxLevOm-0-t500x500.jpg" alt="Your Eyes - Diplo, RY X" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Your eyes</li>
+                                <li class="Music-info">Diplo, RY X</li>
+                                <li class="Music-info">Diplo</li>
+                                <li class="Music-info">4:15</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="Music-categories"> 
+                <div class="Music-categorie-wrapper">
+                    <div class="Music-categorie-title">Top 10 álbums</div>
+                    <div class="Music-categorie-more">
+                        <a href="#" class="Music-a" title="Ver todo">Ver todo</a>
+                    </div>
+                </div>  
+                <div class="Music-songs-wrapper">
+                    <button class="Music-arrow Next Top-albums--next" title="Next button">
+                        <svg class="Music-svg Music-svg--fav">
+                            <use href="#Next-arrow"></use>
+                        </svg>
+                    </button>
+                    <button class="Music-arrow Prev Top-albums--prev" title="Prev button">
+                        <svg class="Music-svg Music-svg--fav">
+                            <use href="#Prev-arrow"></use>
+                        </svg>
+                    </button>
+                    <ol class="Music-list Music-list--ol Top-albums">
+                        <li class="Music-li Top-albums--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-000142907320-lrteku-t500x500.jpg" alt="Bloom - RÜFÜS DU SOL" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Bloom</li>
+                                <li class="Music-info">RÜFÜS DU SOL</li>
+                                <li class="Music-info">2016</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li Top-albums--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-d27a9a39-3647-4a61-84fc-8c4b16e1ec24-0-t500x500.jpg" alt="Levi Don't Do It" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Levi don't do it</li>
+                                <li class="Music-info">BUNT.</li>
+                                <li class="Music-info">2024</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li Top-albums--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-cad37930-dec1-4fba-8d4b-40d72b1c4fa8-0-t500x500.jpg" alt="Diplo (Deluxe) - Diplo" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Diplo (deluxe)</li>
+                                <li class="Music-info">Diplo</li>
+                                <li class="Music-info">2022</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li Top-albums--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-000559543566-mkagfd-t1080x1080.jpg" alt="Yin Yang - Hozho" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Yin yang</li>
+                                <li class="Music-info">Hozho</li>
+                                <li class="Music-info">2019</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li Top-albums--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-pU9cVOmb6qUo-0-t500x500.jpg" alt="Never Tried - Helsoot" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Never tried</li>
+                                <li class="Music-info">Helsoot</li>
+                                <li class="Music-info">2024</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li Top-albums--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-b7378f99-7456-44f9-ab70-697019e00898-0-t500x500.jpg" alt="USB - Fred Again.." class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">USB</li>
+                                <li class="Music-info">Fred Again..</li>
+                                <li class="Music-info">2024</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li Top-albums--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-WWQ5MXo3JVLucjfv-UcmAgA-t1080x1080.jpg" alt="Nobody Is Not Loved - Solomun" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Nobody is not loved</li>
+                                <li class="Music-info">Solomun</li>
+                                <li class="Music-info">2021</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li Top-albums--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-5342cc30-264d-47cd-81eb-0735a92c1184-0-t500x500.jpg" alt="Under Darkening Skies - Monolink" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Under darkening skies</li>
+                                <li class="Music-info">Monolink</li>
+                                <li class="Music-info">2021</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li Top-albums--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-e75bce14-d8d8-439e-9e8d-cde74d09e9f6-0-t500x500.jpg" alt="Dancehall - The Blaze" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Dancehall</li>
+                                <li class="Music-info">The blaze</li>
+                                <li class="Music-info">2018</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li Top-albums--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-aa77807f-335c-4118-a5dd-d54579d27590-0-t500x500.jpg" alt="Endless - Tale Of Us" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Endless</li>
+                                <li class="Music-info">Tale of us</li>
+                                <li class="Music-info">2017</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="Music-categories"> 
+                <div class="Music-categorie-wrapper">
+                    <div class="Music-categorie-title">Listas para ti</div>
+                    <div class="Music-categorie-more">
+                        <a href="#" class="Music-a" title="Ver todo">Ver todo</a>
+                    </div>
+                </div>  
+                <div class="Music-songs-wrapper">
+                    <button class="Music-arrow Next For-you--next" title="Next button">
+                        <svg class="Music-svg Music-svg--fav">
+                            <use href="#Next-arrow"></use>
+                        </svg>
+                    </button>
+                    <button class="Music-arrow Prev For-you--prev" title="Prev button">
+                        <svg class="Music-svg Music-svg--fav">
+                            <use href="#Prev-arrow"></use>
+                        </svg>
+                    </button>
+                    <ul class="Music-list Music-list--ul For-you">
+                        <li class="Music-li For-you--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-C3DDpWebrgLrD5mn-3xagEQ-t500x500.jpg" alt="Housewerk " class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Housewerk</li>
+                                <li class="Music-info">House</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li For-you--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-000731810251-r5sy35-t500x500.jpg" alt="Lowkey Tech" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Lowkey tech</li>
+                                <li class="Music-info">Melodic house</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li For-you--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i.scdn.co/image/ab67706f0000000299d25686236664b771c87321" alt="Tantra" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Tantra</li>
+                                <li class="Music-info">Afro house</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li For-you--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4wICowFerc5NiFnzPlU2k-mU7niqY85jB2A&s" alt="Tulum Vibes" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Tulum vibes</li>
+                                <li class="Music-info">Afro house</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li For-you--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i.scdn.co/image/ab67706f000000021a00927c91ca6203963fff94" alt="Ibiza Classics" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Ibiza classics</li>
+                                <li class="Music-info">Dance music</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li For-you--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i.scdn.co/image/ab67706f00000002243aad781d670f4c00a53be3" alt="Trance Mission" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Trance mission</li>
+                                <li class="Music-info">Trance</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li For-you--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXuM1sUhU_uiXCCp4XjXA_AoW9SdOAzBfC_w&s" alt="Heart Beats" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Heart beats</li>
+                                <li class="Music-info">Melodic techno</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li For-you--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i.scdn.co/image/ab67706f0000000294d511ba3353077cfeb2f0fe" alt="Psytrance Supernova" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Psytrance supernova</li>
+                                <li class="Music-info">Psytrance</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li For-you--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i.scdn.co/image/ab67706f000000020d983b3ce32bc5684dbb96be" alt="Creamy" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Creamy</li>
+                                <li class="Music-info">Dance music</li>
+                            </ul>
+                        </li>
+                        <li class="Music-li For-you--li">
+                            <div class="Music-song">
+                                <div class="Music-cover">
+                                    <picture class="Music-picture">
+                                        <img src="https://i1.sndcdn.com/artworks-000690980962-ms4yvr-t500x500.jpg" alt="Deep House Relax" class="Music-img" loading="lazy">
+                                    </picture>
+                                </div>
+                                <button class="Music-fav" title="Music fav button" title="Fav button">
+                                  <svg class="Music-svg Music-svg--fav">
+                                <use href="#Favorite-icon"/>
+                            </svg>  
+                                </button>
+                            </div>
+                            <ul class="Music-ul">
+                                <li class="Music-info">Deep house relax</li>
+                                <li class="Music-info">Deep house</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+    <footer class="Footer">
+        <div class="Footer-wrapper">
+            <h5 class="Footer-logo">
+                <a href="../index.html" class="Footer-a" title="Bloom Events - Home">
+                    <img src="../Assets/index/bloom-events-logo2.svg" alt="BE Logo" class="Footer-img">
+                </a>
+            </h5>
+            <div class="Footer-newsletter">
+                <h6 class="Footer-h6">
+                  <span class="Footer-span">Entérate de todas las novedades</span>
+                </h6>
+                <form class="Footer-form" action="/submit" method="POST">
+                  <label class="Footer-label" for="email"></label>
+                  <input class="Footer-input" type="email" id="email" name="email" placeholder="Introduce tu correo electrónico" required>
+                  <!-- He deshabilitado la acciñon del botón submit para que no de error -->
+                  <button class="Footer-submit" type="submit" title="Submit" disabled>
+                      <svg width="1.875rem" height="1.875rem">
+                          <use href="#Caret-icon"></use>
+                      </svg>
+                  </button>
+                  <input class="Footer-checkbox" type="checkbox" name="AcceptedTerms" id="AcceptedTerms" required="">
+                  <label class="Footer-checkbox-label" for="AcceptedTerms">He leído y acepto la <strong>Política de Privacidad</strong></label>
+              </form>
+              </div>
+            <div class="Footer-info">
+                <dl class="Footer-dl">
+                    <dt class="Footer-dt Footer-dt--about">
+                        <span class="Footer-span">Sobre nosotros</span>
+                        <div class="Footer-svg">
+                            <svg width="30px" height="30px">
+                            <use href="#Caret-icon"></use>
+                        </svg>
+                        </div>
+                    </dt>
+                        <dd class="Footer-dd Footer-dd--about">Sobre Bloom Events</dd>
+                        <dd class="Footer-dd Footer-dd--about">Nuestros valores</dd>
+                <dt class="Footer-dt Footer-dt--info">
+                    <span class="Footer-span">Información</span>
+                    <div class="Footer-svg">
+                        <svg width="30px" height="30px">
+                        <use href="#Caret-icon"></use>
+                    </svg>
+                    </div>
+                </dt>
+                        <dd class="Footer-dd Footer-dd--info">Eventos</dd>
+                        <dd class="Footer-dd Footer-dd--info">Noticias</dd>
+                    <dt class="Footer-dt Footer-dt--contact">
+                        <span class="Footer-span">Contacto</span>
+                        <div class="Footer-svg">
+                            <svg width="30px" height="30px">
+                            <use href="#Caret-icon"></use>
+                        </svg>
+                        </div>
+                    </dt>
+                        <dd class="Footer-dd Footer-dd--contact">FAQ'S</dd>
+                        <dd class="Footer-dd Footer-dd--contact">Contáctanos</dd>
+            </dl>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
