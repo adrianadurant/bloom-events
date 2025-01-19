@@ -38,7 +38,7 @@ h1 , h2 , h3 , h4 , h5 , h6{
 }
 @font-face {
     font-family: 'Neoneon';
-    src: url('../Assets/fonts/Neoneon.otf') format('opentype'); /* Ruta hacia el archivo OTF */
+    src: url('Assets/fonts/Neoneon.otf') format('opentype'); /* Ruta hacia el archivo OTF */
 }
 /* Estilos generales de la web */
 :root{

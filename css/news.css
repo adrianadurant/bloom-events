@@ -115,17 +115,17 @@ body{
 }
 /* Imágenes como fondo del area de fotos de la noticia */
 .News-image--elrow{
-    background-image: url(../Assets/news/Elrow_OOH_LondonLeicester_1-1600x1067.webp);
+    background-image: url(Assets/news/Elrow_OOH_LondonLeicester_1-1600x1067.webp);
 }
 .News-image--sonar{
-    background-image: url(../Assets/news/highxtar-nathy-peluso-sonar-2025-1-1440x937.webp);
+    background-image: url(Assets/news/highxtar-nathy-peluso-sonar-2025-1-1440x937.webp);
 }
 .News-image--tomorrwoland{
-    background-image: url(../Assets/news/tomorrowland-fireworks.webp);
+    background-image: url(Assets/news/tomorrowland-fireworks.webp);
     
 }
 .News-image--tml{
-    background-image: url(../Assets/news/Tomorrowland-One-Year.webp);
+    background-image: url(Assets/news/Tomorrowland-One-Year.webp);
 }
 .News-video-container{
     height: 50vh;
